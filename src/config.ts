@@ -30,11 +30,11 @@ export const SITE = {
 	description: "",
 	url: "https://astro-ink.vercel.app",
 	githubUrl: "https://github.com/one-aalam/astro-ink",
-	listDrafts: true,
+	listDrafts: false,
 	image:
 		"https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
 	// YT video channel Id (used in media.astro)
-	ytChannelId: "",
+	ytChannelId: "UCgMCzIye5H4JLGfFRNGiFEQ",
 	// Optional, user/author settings (example)
 	// Author: name
 	author: "NGUEMBHYT Nit Harley", // Example: Fred K. Schott
@@ -48,7 +48,7 @@ export const SITE = {
 }
 // Ink - Theme configuration
 export const PAGE_SIZE = 8;
-export const USE_POST_IMG_OVERLAY = false;
+export const USE_POST_IMG_OVERLAY = true;
 export const USE_MEDIA_THUMBNAIL = true;
 
 export const USE_AUTHOR_CARD = true;
