@@ -17,6 +17,12 @@ import decapCmsOauth from "astro-decap-cms-oauth";
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
+
+  buildOptions: {
+    site: 'https://crypyohub.vercel.app',
+    sitemap: true,
+},
+
   output: 'server',
   site: 'https://crypyohub.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
