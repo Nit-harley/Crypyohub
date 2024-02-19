@@ -1,14 +1,14 @@
 backend:
   name: github
-  branch: master
+  branch: develop
   publish_mode: editorial_workflow
-  repo: Nit-harley/Crypyohub # change this to your repo
-  site_domain: crypyohub.vercel.app # change this to your domain
-  base_url: https://crypyohub.vercel.app # change this to your prod URL
+  repo: one-aalam/astro-ink # change this to your repo
+  site_domain: develop--cryptoblogblockchain.netlify.app # change this to your domain
+  base_url: https://develop--cryptoblogblockchain.netlify.app # change this to your prod URL
   auth_scope: repo
   auth_endpoint: oauth
-  display_url: https://crypyohub.vercel.app
-  logo_url: https://crypyohub.vercel.app/assets/logo.jpg
+  display_url: https://develop--cryptoblogblockchain.netlify.app
+  logo_url: https://astro-ink.vercel.app/assets/logo.svg
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
