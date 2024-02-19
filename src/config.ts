@@ -28,8 +28,8 @@ export const SITE = {
 	name: "",
 	title: "Crypto Afrique Futur",
 	description: "",
-	url: "https://astro-ink.vercel.app",
-	githubUrl: "https://github.com/one-aalam/astro-ink",
+	url: "https://crypyohub.vercel.app",
+	githubUrl: "https://github.com/Nit-harley/Crypyohub",
 	listDrafts: false,
 	image:
 		"https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
@@ -41,7 +41,7 @@ export const SITE = {
 	// Author: Twitter handler
 	authorLinkedin: "", // Example: FredKSchott
 	// Author: Image external source
-	authorImage: "../public/assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+	authorImage: "../assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
 	authorBio:
 		"La technologie Blockchain va changer le monde, chez Crypto Afrique Futur, nous ferrons de vous des acteurs majeurs de cette révolution !"
