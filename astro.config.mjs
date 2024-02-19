@@ -17,10 +17,10 @@ import decapCmsOauth from "astro-decap-cms-oauth";
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  output: 'hybrid',
+  output: 'server',
   site: 'https://crypyohub.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
-     port: 4321, // The port to run the dev server on.
+    // port: 4321, // The port to run the dev server on.
   },
   markdown: {
     syntaxHighlight: 'shiki',
