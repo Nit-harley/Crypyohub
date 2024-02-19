@@ -10,12 +10,10 @@ import { getViewsBySlug } from "src/utils/views/in-memory";
 // please uncomment the respective line
 
 
-// export const GET: APIRoute = async ({ params, request }) => {
-//	return new Response(
-//		JSON.stringify({
-//			views: params.slug ? await getViewsBySlug(params.slug) : 0,
-//		}),
-//	);
-//};
-
-
+export const GET: APIRoute = async ({ params, request }) => {
+	return new Response(
+		JSON.stringify({
+			views: params.slug ? await getViewsBySlug(params.slug) : 0,
+		}),
+	);
+};

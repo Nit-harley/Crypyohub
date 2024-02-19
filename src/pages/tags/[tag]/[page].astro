@@ -7,7 +7,7 @@ import DefaultPageLayout from '$/layouts/default.astro'
 import PostPreviewList from '$/components/PostPreviewList.astro'
 import Paginator from '$/components/Paginator.astro'
 
-let title = 'Article en fonction des mots clés'
+let title = '𝐀𝐫𝐭𝐢𝐜𝐥𝐞 𝐞𝐧 𝐟𝐨𝐧𝐜𝐭𝐢𝐨𝐧 𝐝𝐞𝐬 𝐦𝐨𝐭𝐬 𝐜𝐥é𝐬'
 let description = 'Tous les articles posté recemment...'
 
 export async function getStaticPaths({ paginate }) {
@@ -33,7 +33,7 @@ const { page } = Astro.props as Props
 const { tag } = Astro.params as Params
 ---
 
-<DefaultPageLayout content={{ title: `Article par mot clé: ${tag}`, description: `tous les articles que nous avons publiés et liés jusqu'à présent sous des mots clés : ${tag}` }}>
+<DefaultPageLayout content={{ title: `𝐀𝐫𝐭𝐢𝐜𝐥𝐞 𝐩𝐚𝐫 𝐦𝐨𝐭 𝐜𝐥é: ${tag}`, description: `tous les articles que nous avons publiés et liés jusqu'à présent sous des mots clés : ${tag}` }}>
   <PostPreviewList posts={page.data} />
     <Paginator page={page} />
 </DefaultPageLayout>

@@ -3,23 +3,23 @@ import type { NavItems } from "./types";
 export const NAV_ITEMS: NavItems = {
 	home: {
 		path: "/",
-		title: "Acceuil",
+		title: "𝐀𝐜𝐜𝐞𝐮𝐢𝐥",
 	},
 	blog: {
 		path: "/blog",
-		title: "blog",
+		title: "𝐁𝐥𝐨𝐠",
 	},
 	tags: {
 		path: "/tags",
-		title: "Mots clés",
+		title: "𝐌𝐨𝐭𝐬 𝐜𝐥é𝐬",
 	},
 	media: {
 		path: "/media",
-		title: "Youtube",
+		title: "𝐘𝐨𝐮𝐭𝐮𝐛𝐞",
 	},
 	about: {
 		path: "/about",
-		title: "A Propos",
+		title: "𝐀 𝐏𝐫𝐨𝐩𝐨𝐬",
 	},
 };
 
@@ -29,7 +29,7 @@ export const SITE = {
 	title: "Crypto Afrique Futur",
 	description: "",
 	url: "https://crypyohub.vercel.app",
-	githubUrl: "https://github.com/Nit-harley/Crypyohub",
+	githubUrl: "https://github.com/Nit-harley",
 	listDrafts: false,
 	image:
 		"https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
@@ -49,9 +49,9 @@ export const SITE = {
 // Ink - Theme configuration
 export const PAGE_SIZE = 8;
 export const USE_POST_IMG_OVERLAY = false;
-export const USE_MEDIA_THUMBNAIL = false;
+export const USE_MEDIA_THUMBNAIL = true;
 
 export const USE_AUTHOR_CARD = true;
 export const USE_SUBSCRIPTION = true; /* works only when USE_AUTHOR_CARD is true */
 
-export const USE_VIEW_STATS = false;
+export const USE_VIEW_STATS = true;
