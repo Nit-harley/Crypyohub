@@ -52,5 +52,5 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
       allowNodeBuiltins: true
     }
   },
- 
+  adapter: vercel()
 });
