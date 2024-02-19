@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: main
+  branch: master
   publish_mode: editorial_workflow
   repo: Nit-harley/Crypyohub # change this to your repo
   site_domain: crypyohub.vercel.app # change this to your domain
