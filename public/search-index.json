@@ -1,5 +1,13 @@
 [
     {
+        "slug":"crypto-definition",
+        "category":"blog",
+        "title":"𝐐𝐮’𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮𝐞 𝐥𝐚 𝐜𝐫𝐲𝐩𝐭𝐨 𝐦𝐨𝐧𝐧𝐚𝐢𝐞 ?",
+        "description":"Dans cet article vous retrouverez toutes les informations les plus pertinentes possibles pour comprendre ce qu'est la crypto-monnaie.",
+        "tags":["Crypto-monnaie","Monnaie","Blockchain"],
+        "body":"L'évolution du Web, Pourquoi le Web 3.0 est-il important ?, Comment fonctionnera le Web 3.0 ?, Cas d'utilisation et applications du Web 3.0, Quels sont les avantages potentiels du Web 3.0 ?"
+    },
+    {
         "slug":"blockchain-web3",
         "category":"blog",
         "title":"𝐐𝐮'𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮𝐞 𝐥𝐞 𝐖𝐞𝐛𝟑.𝟎 (𝐖𝐞𝐛𝟑) ?",
