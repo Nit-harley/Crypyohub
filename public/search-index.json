@@ -18,12 +18,12 @@
         
    
     {
-        "slug":"spa-fatigue",
+        "slug":"blockchain-droit",
         "category":"blog",
-        "title":"Second-guessing the modern web",
-        "description":"There is a sweet spot of React - in moderately interactive interfaces..",
-        "tags":["architecture","front-end","spa"],
-        "body":"https://macwright.com/2020/05/10/spa-fatigue.html\n"
+        "title":"𝐋𝐚 𝐛𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐝𝐚𝐧𝐬 𝐥𝐞 𝐬𝐞𝐜𝐭𝐞𝐮𝐫 𝐝𝐮 𝐝𝐫𝐨𝐢𝐭",
+        "description":"Dans cet article, nous verrons comment la blockchain pourrait impacter le secteur du juridique et le faire évoluer",
+        "tags":["Droit","Juridique","Blockchain"],
+        "body":"𝐋𝐚 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐞𝐭 𝐥𝐞 𝐃𝐫𝐨𝐢𝐭 : 𝐮𝐧𝐞 𝐧𝐨𝐮𝐯𝐞𝐥𝐥𝐞 è𝐫𝐞"
     },
 
     {
