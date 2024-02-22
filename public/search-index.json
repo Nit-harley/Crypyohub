@@ -1,5 +1,14 @@
 [
     {
+        "slug":"blockchain-web3",
+        "category":"blog",
+        "title":"𝐐𝐮'𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮𝐞 𝐥𝐞 𝐖𝐞𝐛𝟑.𝟎 (𝐖𝐞𝐛𝟑) ?",
+        "description":"Dans cet article, nous plongerons au coeur du web3.0, une évolution potentielle du web actuel qui nous reserve bien des surprises.",
+        "tags":["Web3","Internet","Blockchain"],
+        "body":"L'évolution du Web, Pourquoi le Web 3.0 est-il important ?, Comment fonctionnera le Web 3.0 ?, Cas d'utilisation et applications du Web 3.0, Quels sont les avantages potentiels du Web 3.0 ?"
+    },
+
+    {
         "slug":"blockchain-definition",
         "category":"blog",
         "title":"𝐐𝐮’𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮𝐞 𝐥𝐚 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 ?",
