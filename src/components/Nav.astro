@@ -3,20 +3,39 @@ import { toTitleCase } from '$/utils'
 import { NAV_ITEMS } from '$/config'
 ---
 <nav class="nav py-3">
-    <ul class="nav-list dark:text-theme-dark-secondary" transition:animate="fade">
-         {
-            Object.keys(NAV_ITEMS).map(navItemKey => <li>
-                <a class:list={[
-                    `pb-1 border-b-2 hover:border-gray-400 hover:dark:border-gray-700 `,
-                    Astro.url.pathname !== NAV_ITEMS[navItemKey].path ? 'border-gray-100 dark:border-gray-800': '',
-                    Astro.url.pathname === NAV_ITEMS[navItemKey].path ? 'border-theme-primary' : ''
-                ]} href={NAV_ITEMS[navItemKey].path} title={NAV_ITEMS[navItemKey].title}>{toTitleCase(NAV_ITEMS[navItemKey].title)}</a>
-            </li>)
-        }
-    </ul>
+    <div class="nav-container dark:text-theme-dark-secondary overflow-x-auto flex flex-no-wrap" transition:animate="fade">
+        <ul class="nav-list list-none flex">
+            {
+                Object.keys(NAV_ITEMS).map(navItemKey => <li>
+                    <a class:list={[
+                        `py-2 px-4 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800`,
+                        Astro.url.pathname !== NAV_ITEMS[navItemKey].path ? 'text-gray-600 dark:text-gray-400' : 'text-theme-primary',
+                        Astro.url.pathname === NAV_ITEMS[navItemKey].path ? 'bg-theme-primary text-white' : ''
+                    ]} href={NAV_ITEMS[navItemKey].path} title={NAV_ITEMS[navItemKey].title}>{toTitleCase(NAV_ITEMS[navItemKey].title)}</a>
+                </li>)
+            }
+        </ul>
+    </div>
 </nav>
 <style>
+    .nav-container {
+        @apply flex items-center; /* Aligner les éléments au centre */
+        width: 100%; /* Largeur maximale */
+        border-bottom: 1px solid #ccc; /* Ligne de séparation */
+    }
     .nav-list {
-        @apply inline-flex list-none gap-8 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary py-2 flex-wrap mb-8
+        @apply list-none flex gap-8 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary py-2 mb-8;
+    }
+    .nav-list li {
+        @apply flex-shrink-0; /* Empêcher le rétrécissement des éléments */
+    }
+    /* Pour garantir le défilement horizontal en format mobile */
+    @media screen and (max-width: 640px) {
+        .nav-container {
+            @apply overflow-x-auto; /* Activation du défilement horizontal */
+        }
     }
 </style>
+
+
+

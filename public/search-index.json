@@ -1,5 +1,13 @@
 [
     {
+        "slug":"minage-bitcoin",
+        "category":"blog",
+        "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐥𝐞 𝐦𝐢𝐧𝐚𝐠𝐞 𝐝𝐞 𝐁𝐢𝐭𝐜𝐨𝐢𝐧 ?",
+        "description":"Dans cet article vous découvrirez ce qu'est le minage, sont utilité pour la blockchain Bitcoin et comment potentiellement vous lancer",
+        "tags":["Minage","Bitcoin","Mineurs", "Definition", "Cryptomonnaie"],
+        "body":"Pourquoi Bitcoin a besoin de mineurs, Qu’est-ce que le minage de Bitcoin ?, Pourquoi miner du Bitcoin ?, Quel est le montant de la récompense, Alving  "
+    },
+    {
         "slug":"blockchain-informatique",
         "category":"blog",
         "title":"𝐋'𝐢𝐦𝐩𝐚𝐜𝐭 𝐝𝐞 𝐥𝐚 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐬𝐮𝐫 𝐥𝐞 𝐝é𝐯𝐞𝐥𝐨𝐩𝐩𝐞𝐦𝐞𝐧𝐭 𝐖𝐞𝐛",
