@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-// import { getViewsBySlug } from "src/utils/views/turso";
+import { getViewsBySlug } from "src/utils/views/turso";
  import { getViewsBySlug } from "src/utils/views/ioredis";
 //import { getViewsBySlug } from "src/utils/views/in-memory";
 
