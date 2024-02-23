@@ -14,6 +14,7 @@ const description = 'Votre moteur de recherche blockchain made in Africa sur Cry
 const posts = await getCollection('blog')
 ---
 <DefaultPageLayout content={{ title, description }} showPageHeader={false}>
+  
     <div class="hero ">
         <div class="hero__face">
             <div class="author-card">
@@ -31,7 +32,11 @@ const posts = await getCollection('blog')
     <div class="page__actions">
         <a class="action__go-to-blog ink-h" href="/blog" title="All Posts">Tous les articles &rarr;</a>
     </div>
-
+    <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
+      <p class="mb-2">Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
+      <button id="accept-cookies" class="mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Accepter les cookies</button>
+      <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser les cookies</button>
+  </div>
     <div class="container mx-auto py-12 flex flex-col items-center">
         <h2 class="text-3xl font-semibold mb-6">𝐍𝐨𝐬 𝐩𝐚𝐫𝐭𝐞𝐧𝐚𝐢𝐫𝐞𝐬</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -55,11 +60,15 @@ const posts = await getCollection('blog')
           </div>
         </div>
       </div>
+
       <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
         <p class="mb-2">Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
-        <button id="accept-cookies" class="mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Accepter les cookies</button>
-        <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser les cookies</button>
+        <div class="flex justify-center">
+            <button id="accept-cookies" class="mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Accepter</button>
+            <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser</button>
+        </div>
     </div>
+     
 </DefaultPageLayout>
 
 <style>
@@ -103,50 +112,33 @@ const posts = await getCollection('blog')
     }
 </style>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const cookieConsent = document.getElementById("cookie-consent");
-    const acceptCookiesBtn = document.getElementById("accept-cookies");
-    const rejectCookiesBtn = document.getElementById("reject-cookies");
+document.addEventListener('DOMContentLoaded', function () {
+  const cookieConsent = document.getElementById('cookie-consent');
+  const acceptCookiesBtn = document.getElementById('accept-cookies');
+  const rejectCookiesBtn = document.getElementById('reject-cookies');
 
-    const setCookie = (name, value, days) => {
-        const expires = new Date();
-        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-        document.cookie = name + "=" + value + ";expires=" + expires.toUTCString() + ";path=/";
-    };
+  // Vérifier si les cookies ont déjà été acceptés
+  const cookiesAccepted = localStorage.getItem('cookiesAccepted');
 
-    const getCookie = (name) => {
-        const cookieName = name + "=";
-        const decodedCookie = decodeURIComponent(document.cookie);
-        const cookieArr = decodedCookie.split(";");
+  if (!cookiesAccepted) {
+      // Afficher la boîte de consentement aux cookies
+      cookieConsent.classList.remove('hidden');
+  }
 
-        for (let i = 0; i < cookieArr.length; i++) {
-            let cookie = cookieArr[i];
-            while (cookie.charAt(0) === " ") {
-                cookie = cookie.substring(1);
-            }
-            if (cookie.indexOf(cookieName) === 0) {
-                return cookie.substring(cookieName.length, cookie.length);
-            }
-        }
-        return "";
-    };
+  // Gérer le clic sur le bouton Accepter
+  acceptCookiesBtn.addEventListener('click', function () {
+      // Cacher la boîte de consentement
+      cookieConsent.classList.add('hidden');
+      // Enregistrer la préférence de cookies acceptés
+      localStorage.setItem('cookiesAccepted', true);
+  });
 
-    const checkCookieConsent = () => {
-        if (!getCookie("cookies_accepted")) {
-            cookieConsent.classList.add("show");
-        }
-    };
-
-    acceptCookiesBtn.addEventListener("click", () => {
-        setCookie("cookies_accepted", "true", 365);
-        cookieConsent.classList.remove("show");
-    });
-
-    rejectCookiesBtn.addEventListener("click", () => {
-        setCookie("cookies_accepted", "false", 365);
-        cookieConsent.classList.remove("show");
-    });
-
-    checkCookieConsent();
+  // Gérer le clic sur le bouton Refuser
+  rejectCookiesBtn.addEventListener('click', function () {
+      // Cacher la boîte de consentement
+      cookieConsent.classList.add('hidden');
+      // Enregistrer la préférence de cookies refusés
+      localStorage.setItem('cookiesAccepted', false);
+  });
 });
-</script> 
+</script>
