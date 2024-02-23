@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-informatique",
+        "category":"blog",
+        "title":"𝐋'𝐢𝐦𝐩𝐚𝐜𝐭 𝐝𝐞 𝐥𝐚 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐬𝐮𝐫 𝐥𝐞 𝐝é𝐯𝐞𝐥𝐨𝐩𝐩𝐞𝐦𝐞𝐧𝐭 𝐖𝐞𝐛",
+        "description":"Dans cet article, nous verrons comment la technologie blockchain est entrain de révolutionner le developpement web et la façon dont les applications sont construit.",
+        "tags":["Develeppeur web","Informatique","Blockchain", "Technologie"],
+        "body":"Redéfinir la gestion et la sécurité des données, Monétiser les applications Web,  Intégration innovante avec l'IoT et l'IA, Solutions basées sur l'IA sur la Blockchain "
+    },
+    {
         "slug":"crypto-definition",
         "category":"blog",
         "title":"𝐐𝐮’𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮𝐞 𝐥𝐚 𝐜𝐫𝐲𝐩𝐭𝐨 𝐦𝐨𝐧𝐧𝐚𝐢𝐞 ?",
@@ -30,7 +38,7 @@
         "category":"blog",
         "title":"𝐋𝐞 𝐟𝐮𝐭𝐮𝐫 𝐝𝐞 𝐥𝐚 𝐦𝐨𝐧𝐧𝐚𝐢𝐞",
         "description":"La technologie Blockchain au travers de Bitcoin a litteralement le pouvoir de redefinir la manière dont nous penserons le système financier du futur.",
-        "tags":["Bitcoin","Monnaie", "Troc", "cryptomonnaie"],
+        "tags":["Bitcoin","Monnaie", "Troc", "Cryptomonnaie"],
         "body":""},
         
    
