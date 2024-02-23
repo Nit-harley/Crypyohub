@@ -24,11 +24,13 @@ import { NAV_ITEMS } from '$/config'
     transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Ajout de transitions pour l'apparence du menu */
     background-color: rgba(255, 255, 255, 0); /* Menu initialement transparent */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Ombre initialement transparente */
+    animation: fadeInDown 0.5s ease; /* Animation pour faire apparaître le menu */
 }
 
 .nav.hidden {
-    transform: translateY(-100%);
     opacity: 0;
+    pointer-events: none; /* Désactiver les événements de souris lorsque le menu est caché */
+    animation: fadeOutUp 0.5s ease; /* Animation pour faire disparaître le menu */
 }
 
 .nav.fixed {
@@ -41,11 +43,26 @@ import { NAV_ITEMS } from '$/config'
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée pour le menu fixé */
 }
 
-.nav-container {
-    padding: 0 20px; /* Ajustez le rembourrage pour plus d'espace autour du contenu */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
 
 
     .nav-list {
@@ -66,10 +83,12 @@ import { NAV_ITEMS } from '$/config'
 <script>
 var lastScrollTop = 0;
 
+
+
 window.addEventListener('scroll', function() {
     var nav = document.getElementById('mainNav');
-    var currentScroll = window.scrollY || window.pageYOffset; // Utilisez window.scrollY comme alternative à window.pageYOffset
-
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
     if (currentScroll > lastScrollTop) {
         nav.classList.add('hidden'); // Si le défilement est vers le bas, masquez le menu
     } else {
