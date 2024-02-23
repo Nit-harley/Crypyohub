@@ -55,9 +55,31 @@ const posts = await getCollection('blog')
           </div>
         </div>
       </div>
+      <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
+        <p class="mb-2">Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
+        <button id="accept-cookies" class="mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Accepter les cookies</button>
+        <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser les cookies</button>
+    </div>
 </DefaultPageLayout>
 
 <style>
+
+#cookie-consent {
+    animation: slide-up 0.5s ease-out forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
     .hero {
         @apply flex flex-col md:flex-row gap-8 w-full transition-all pb-4
     }
@@ -80,3 +102,51 @@ const posts = await getCollection('blog')
         @apply py-4 hover:underline
     }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cookieConsent = document.getElementById("cookie-consent");
+    const acceptCookiesBtn = document.getElementById("accept-cookies");
+    const rejectCookiesBtn = document.getElementById("reject-cookies");
+
+    const setCookie = (name, value, days) => {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + value + ";expires=" + expires.toUTCString() + ";path=/";
+    };
+
+    const getCookie = (name) => {
+        const cookieName = name + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const cookieArr = decodedCookie.split(";");
+
+        for (let i = 0; i < cookieArr.length; i++) {
+            let cookie = cookieArr[i];
+            while (cookie.charAt(0) === " ") {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) === 0) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        return "";
+    };
+
+    const checkCookieConsent = () => {
+        if (!getCookie("cookies_accepted")) {
+            cookieConsent.classList.add("show");
+        }
+    };
+
+    acceptCookiesBtn.addEventListener("click", () => {
+        setCookie("cookies_accepted", "true", 365);
+        cookieConsent.classList.remove("show");
+    });
+
+    rejectCookiesBtn.addEventListener("click", () => {
+        setCookie("cookies_accepted", "false", 365);
+        cookieConsent.classList.remove("show");
+    });
+
+    checkCookieConsent();
+});
+</script> 
