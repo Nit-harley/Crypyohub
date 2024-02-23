@@ -61,6 +61,7 @@ const posts = await getCollection('blog')
         </div>
       </div>
 
+      <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-50"></div>
       <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
         <p class="mb-2">Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
         <div class="flex justify-center">
@@ -73,9 +74,15 @@ const posts = await getCollection('blog')
 
 <style>
 
+#overlay {
+    display: none;
+}
+
 #cookie-consent {
     animation: slide-up 0.5s ease-out forwards;
+    z-index: 9999; /* Assure que le message est au-dessus de tout le contenu */
 }
+
 
 @keyframes slide-up {
     0% {
@@ -113,32 +120,34 @@ const posts = await getCollection('blog')
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const cookieConsent = document.getElementById('cookie-consent');
-  const acceptCookiesBtn = document.getElementById('accept-cookies');
-  const rejectCookiesBtn = document.getElementById('reject-cookies');
+    const cookieConsent = document.getElementById('cookie-consent');
+    const overlay = document.getElementById('overlay');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    const rejectCookiesBtn = document.getElementById('reject-cookies');
 
-  // Vérifier si les cookies ont déjà été acceptés
-  const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+    // Afficher l'overlay lorsque la boîte de consentement aux cookies est affichée
+    cookieConsent.classList.remove('hidden');
+    overlay.style.display = 'block';
 
-  if (!cookiesAccepted) {
-      // Afficher la boîte de consentement aux cookies
-      cookieConsent.classList.remove('hidden');
-  }
+    // Gérer le clic sur le bouton Accepter
+    acceptCookiesBtn.addEventListener('click', function () {
+        // Cacher la boîte de consentement
+        cookieConsent.classList.add('hidden');
+        // Enregistrer la préférence de cookies acceptés
+        localStorage.setItem('cookiesAccepted', true);
+        // Cacher l'overlay
+        overlay.style.display = 'none';
+    });
 
-  // Gérer le clic sur le bouton Accepter
-  acceptCookiesBtn.addEventListener('click', function () {
-      // Cacher la boîte de consentement
-      cookieConsent.classList.add('hidden');
-      // Enregistrer la préférence de cookies acceptés
-      localStorage.setItem('cookiesAccepted', true);
-  });
-
-  // Gérer le clic sur le bouton Refuser
-  rejectCookiesBtn.addEventListener('click', function () {
-      // Cacher la boîte de consentement
-      cookieConsent.classList.add('hidden');
-      // Enregistrer la préférence de cookies refusés
-      localStorage.setItem('cookiesAccepted', false);
-  });
+    // Gérer le clic sur le bouton Refuser
+    rejectCookiesBtn.addEventListener('click', function () {
+        // Cacher la boîte de consentement
+        cookieConsent.classList.add('hidden');
+        // Enregistrer la préférence de cookies refusés
+        localStorage.setItem('cookiesAccepted', false);
+        // Cacher l'overlay
+        overlay.style.display = 'none';
+    });
 });
+
 </script>
