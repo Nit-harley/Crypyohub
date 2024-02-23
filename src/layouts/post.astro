@@ -30,6 +30,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
 <html lang="en">
     <head>
         <BaseHead {...content} title={ content.title ? `${ SITE.title } | ${content.title}` : SITE.title }/>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65d8b41d1eabb90019a54990&product=inline-share-buttons&source=platform" async="async"></script>
     </head>
     <MainLayout>
         <div class="post__header">
@@ -51,7 +52,9 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                         <!-- post creation/updation data -->
                         { new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(new Date(content.date))}
                     </span>
+                    
                     <span class="post__stats">
+                        <div class="sharethis-inline-share-buttons"></div>
                         { USE_VIEW_STATS && ` | `}
                         { USE_VIEW_STATS && 
                             <Icon class="w-5 h-5 inline-block" pack="mdi" name="eye" />
