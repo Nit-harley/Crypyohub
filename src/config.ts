@@ -25,21 +25,21 @@ export const NAV_ITEMS: NavItems = {
 
 export const SITE = {
 	// Your site's detail?
-	name: "",
+	name: "𝐁𝐥𝐨𝐠",
 	title: "Crypto Afrique Futur",
-	description: "",
+	description: "𝟏𝟎𝟎% 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧",
 	url: "https://crypyohub.vercel.app",
 	githubUrl: "https://github.com/Nit-harley",
-	listDrafts: false,
+	listDrafts: true,
 	image:
-		"https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
+		"../assets/logo.png",
 	// YT video channel Id (used in media.astro)
 	ytChannelId: "UCgMCzIye5H4JLGfFRNGiFEQ",
 	// Optional, user/author settings (example)
 	// Author: name
 	author: "NGUEMBHYT Nit Harley", // Example: Fred K. Schott
 	// Author: Twitter handler
-	authorLinkedin: "", // Example: FredKSchott
+	authorLinkedin: "NGUEMBHYT Nit Harley", // Example: FredKSchott
 	// Author: Image external source
 	authorImage: "../assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
