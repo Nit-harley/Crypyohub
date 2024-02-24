@@ -25,9 +25,9 @@ export const NAV_ITEMS: NavItems = {
 
 export const SITE = {
 	// Your site's detail?
-	name: "𝐁𝐥𝐨𝐠",
+	name: "𝟏𝟎𝟎%",
 	title: "Crypto Afrique Futur",
-	description: "𝟏𝟎𝟎% 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧",
+	description: "𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧",
 	url: "https://crypyohub.vercel.app",
 	githubUrl: "https://github.com/Nit-harley",
 	listDrafts: true,
