@@ -6,7 +6,7 @@
 
 ---
 
-<header class="header">
+<header class="header flex items-center gap-4 border-b py-3">
     <div class="header__logo">
         <a href="/" class="avatar">
             <img width="95" src="/assets/logo.png" alt="Crypto Afrique Futur logo" />
@@ -16,12 +16,12 @@
         <h3 class="header__title dark:text-theme-dark-secondary">
             <a href="/">{ SITE.name }</a>
         </h3>
-        <div class="header__meta-more flex">
+        <div class="header__meta-more flex items-center">
             <p class="header__desc">
                 { SITE.description }
             </p>
             <nav class="header__nav flex">
-                <ul class="header__ref-list">
+                <ul class="header__ref-list flex gap-3">
                     <li>
                         <SearchBtn client:visible />
                     </li>
@@ -52,18 +52,18 @@
 
 <style>
     .header {
-        @apply flex gap-4 border-b py-3 /* border-gray-200 dark:border-gray-700 - check styles/global.css */
+        @apply flex gap-4 border-b py-3;
     }
     .header__logo-img {
-        @apply w-32 h-32 rounded-full overflow-hidden
+        @apply w-32 h-32 rounded-full overflow-hidden;
     }
     .header__title {
-        @apply text-4xl font-extrabold md:text-5xl text-theme-secondary dark:text-theme-dark-secondary
+        @apply text-4xl font-extrabold md:text-5xl text-theme-secondary dark:text-theme-dark-secondary;
     }
     .header__desc {
-        @apply text-xl flex-1 dark:text-gray-200
+        @apply text-xl flex-1 dark:text-gray-200;
     }
     .header__ref-list {
-        @apply flex gap-3 text-gray-400
+        @apply flex gap-3 text-gray-400;
     }
 </style>
