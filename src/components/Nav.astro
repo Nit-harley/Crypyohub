@@ -105,15 +105,6 @@ function handleScroll() {
     ticking = false;
 }
 
-window.addEventListener('scroll', function() {
-    if (!ticking) {
-        window.requestAnimationFrame(function() {
-            handleScroll();
-            ticking = false;
-        });
-    }
-    ticking = true;
-});
 
 
 </script>
