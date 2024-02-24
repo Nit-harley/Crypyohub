@@ -34,7 +34,7 @@ export const SITE = {
 	image:
 		"../assets/logo.png",
 	// YT video channel Id (used in media.astro)
-	ytChannelId: "UCgMCzIye5H4JLGfFRNGiFEQ",
+	ytChannelId: "",
 	// Optional, user/author settings (example)
 	// Author: name
 	author: "NGUEMBHYT Nit Harley", // Example: Fred K. Schott

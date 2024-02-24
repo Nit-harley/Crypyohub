@@ -15,7 +15,7 @@
 </div>
 <br/>
 
-<img src="./public/astro-banner.png" alt="Astro Banner" />
+<img src="../assets/logo.png" alt="Crypto Afrique Futur Banner" />
 
 It's hugely inspired by [Hugo](https://github.com/knadh/hugo-ink)'s Ink theme and strives to remain light, while providing the basis for a beautiful, minimal blog.
 
