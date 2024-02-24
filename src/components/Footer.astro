@@ -2,33 +2,61 @@
     import { SITE } from '$/config'
     import ModeLabel from './ModeLabel.svelte'
 ---
+
 <footer class="mt-20 xl:mt-32 mx-auto w-full relative text-center bg-orange-600 text-white">
+    <!-- Dans votre fichier de modèle ou de pied de page, juste avant la balise </body> -->
+<script>
+    window.addEventListener('scroll', function() {
+      var backToTop = document.getElementById('back-to-top');
+      if (window.scrollY > 100) {
+        backToTop.classList.remove('hidden');
+      } else {
+        backToTop.classList.add('hidden');
+      }
+    });
+  
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
     <div class="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
-        <h2 class="font-bold text-3xl xl:text-4xl leading-snug">
+        <h2 class="font-bold text-3xl xl:text-4xl leading-snug text-white">
             Vous souhaitez aller plus loin ?<br>Contactez-nous dès maintenant !
         </h2>
-        <a class="mt-8 xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-orange-800 rounded-full shadow-xl border border-transparent hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-999 focus:ring-orange-500"
+        <a class="mt-8 xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-orange-800 rounded-full shadow-xl border border-transparent hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-999 focus:ring-orange-500 text-white"
         href="https://wa.me/+24177976941">Whatsapp</a>
         <div class="mt-14 xl:mt-20">
             <nav class="flex flex-wrap justify-center text-lg font-medium">
-                <div class="px-5 py-2"><a href="https://web.facebook.com/cryptoafriquefuturr">Facebook</a></div>
-                <div class="px-5 py-2"><a href="https://www.linkedin.com/company/crypto-afrique-futur">Linkedin</a></div>
-                <div class="px-5 py-2"><a href="https://www.youtube.com/@cryptoafriquefutur">Youtube</a></div>
-                <div class="px-5 py-2"><a href="https://twitter.com/cryptoafriquef1?s=21&t=lSbbfrb7s5zyVN24fwgO5A">Twitter</a></div>
-                <div class="px-5 py-2"><a href="https://t.me/CryptoAfriqueFuture">Telegram</a></div>
+                <div class="px-5 py-2"><a href="https://web.facebook.com/cryptoafriquefuturr" class="text-white">Facebook</a></div>
+                <div class="px-5 py-2"><a href="https://www.linkedin.com/company/crypto-afrique-futur" class="text-white">Linkedin</a></div>
+                <div class="px-5 py-2"><a href="https://www.youtube.com/@cryptoafriquefutur" class="text-white">Youtube</a></div>
+                <div class="px-5 py-2"><a href="https://twitter.com/cryptoafriquef1?s=21&t=lSbbfrb7s5zyVN24fwgO5A" class="text-white">Twitter</a></div>
+                <div class="px-5 py-2"><a href="https://t.me/CryptoAfriqueFuture" class="text-white">Telegram</a></div>
             </nav>
             <div class="mb-4 lg:mb-0 text-center">
-                <br> <h1 class="text-lg font-bold mb-2">AVERTISSEMENT</h1>
-                <p class="text-sm">Tous les articles et les informations présentées sur le blog Crypto Afrique Futur ne sont pas des conseils financiers. Le blog ne pourra pas être tenu responsable de vos propres actions d'investissement.</p> 
+                <br> <h1 class="text-lg font-bold mb-2 text-white">AVERTISSEMENT</h1>
+                <p class="text-sm text-white">Tous les articles et les informations présentées sur le blog Crypto Afrique Futur ne sont pas des conseils financiers. Le blog ne pourra pas être tenu responsable de vos propres actions d'investissement.</p>  
             </div>
             <div class="mb-4 lg:mb-0">
-                <p class="text-sm">&copy; 2024 Copyright notice | 
+                <p class="text-sm text-white">&copy; 2024 Copyright notice | 
                 <a href="{ SITE.githubUrl }" class="text-blue-400 hover:text-blue-300" title="{ SITE.name }'s Github URL">{ SITE.name }</a>
                  <a href="https://crypyohub.vercel.app"><ModeLabel client:load/></a> <a href="https://crypyohub.vercel.app" class="text-blue-400 hover:text-blue-300">Crypto Afrique Futur</a></p>
             </div>
         </div>
     </div>
+
+    <!-- Dans votre fichier de modèle ou de pied de page -->
+    <a href="#" id="back-to-top" class="fixed bottom-5 right-5 bg-gray-800 text-white p-3 rounded-full shadow-md hidden transition duration-300 ease-in-out transform hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+      </a>
 </footer>
+
+
+
 
 
 

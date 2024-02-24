@@ -69,8 +69,6 @@ import { NAV_ITEMS } from '$/config'
 }
 
 
-
-
     .nav-list {
         @apply list-none flex gap-8 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary py-2 mb-8;
     }
@@ -87,26 +85,34 @@ import { NAV_ITEMS } from '$/config'
 
 
 <script>
+
 let lastScrollTop = 0;
+let ticking = false;
 
-window.addEventListener('scroll', function() {
+function handleScroll() {
     var nav = document.getElementById('mainNav');
-    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var st = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
     if (st > lastScrollTop) {
-        nav.classList.add('hidden'); // Si le défilement est vers le bas, masquez le menu
+        nav.style.transition = 'transform 0.5s ease-out'; // Ajoutez une transition pour une apparence douce
+        nav.style.transform = 'translateY(-100%)'; // Faites glisser le menu vers le haut lors du défilement vers le bas
     } else {
-        nav.classList.remove('hidden'); // Si le défilement est vers le haut, montrez le menu
+        nav.style.transition = 'transform 0.5s ease-out'; // Ajoutez une transition pour une apparence douce
+        nav.style.transform = 'translateY(0)'; // Réinitialiser la position du menu lors du défilement vers le haut
     }
-    lastScrollTop = st <= 0 ? 0 : st; // Pour gérer les défilements vers le haut lorsqu'ils atteignent le haut de la page
-});
+
+    lastScrollTop = st <= 0 ? 0 : st;
+    ticking = false;
+}
 
 window.addEventListener('scroll', function() {
-    var nav = document.getElementById('mainNav');
-    if (window.scrollY > 50) { // Ajustez cette valeur en fonction de la position de défilement à partir de laquelle vous voulez fixer le menu
-        nav.classList.add('fixed');
-    } else {
-        nav.classList.remove('fixed');
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            handleScroll();
+            ticking = false;
+        });
     }
+    ticking = true;
 });
 
 
