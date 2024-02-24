@@ -25,6 +25,7 @@ import { NAV_ITEMS } from '$/config'
     background-color: rgba(255, 255, 255, 0); /* Menu initialement transparent */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Ombre initialement transparente */
     animation: fadeInDown 0.5s ease;
+    
 }
 
 .nav.hidden {
@@ -67,10 +68,13 @@ import { NAV_ITEMS } from '$/config'
         transform: translateY(-100%);
     }
 }
-
+.nav {
+        @apply transition-all duration-300 ease-in-out bg-white shadow-md; /* Autres styles */
+        margin-bottom: 20px; /* Augmentation de la marge inférieure */
+    }
 
     .nav-list {
-        @apply list-none flex gap-8 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary py-2 mb-8;
+        @apply list-none flex gap-8 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary py-2 mb-2;
     }
     .nav-list li {
         @apply flex-shrink-0; /* Empêcher le rétrécissement des éléments */
