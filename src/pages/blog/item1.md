@@ -1,7 +1,11 @@
 ---
 layout: $/layouts/post.astro
-title: Item1
+title: "BLOCKCHAIN EN AFRIQUE "
 description: Test modif totale
+tags:
+  - Blockchain
+  - blog
+  - technologie
 author: Justin
 authorTwitter: "@justin"
 date: 2023-12-11T00:48:30.405Z
