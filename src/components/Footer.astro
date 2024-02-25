@@ -1,6 +1,9 @@
 ---
     import { SITE } from '$/config'
     import ModeLabel from './ModeLabel.svelte'
+    import { SITE } from '$/config'
+    import ModeLabel from './ModeLabel.svelte'
+    import NetlifyIdentity from './NetlifyIdentity.svelte'
 ---
 
 <footer class="mt-20 xl:mt-32 mx-auto w-full relative text-center bg-orange-600 text-white">
@@ -43,6 +46,7 @@
                 <p class="text-sm text-white">&copy; 2024 Copyright notice | 
                 <a href="{ SITE.githubUrl }" class="text-blue-400 hover:text-blue-300" title="{ SITE.name }'s Github URL">{ SITE.name }</a>
                  <a href="https://crypyohub.vercel.app"><ModeLabel client:load/></a> <a href="https://crypyohub.vercel.app" class="text-blue-400 hover:text-blue-300">Crypto Afrique Futur</a></p>
+                 <NetlifyIdentity client:load/>
             </div>
         </div>
     </div>
