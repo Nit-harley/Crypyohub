@@ -28,11 +28,11 @@ export const SITE = {
 	name: "",
 	title: "Crypto Afrique Futur",
 	description: "",
-	url: "https://crypyohub.vercel.app",
+	url: "https://criptohub.netlify.app/",
 	githubUrl: "https://github.com/Nit-harley",
 	listDrafts: false,
 	image:
-		"../assets/logo.png",
+		"/assets/logo.png",
 	// YT video channel Id (used in media.astro)
 	ytChannelId: "",
 	// Optional, user/author settings (example)
@@ -41,7 +41,7 @@ export const SITE = {
 	// Author: Twitter handler
 	authorLinkedin: "NGUEMBHYT Nit Harley", // Example: FredKSchott
 	// Author: Image external source
-	authorImage: "../assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+	authorImage: "/assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
 	authorBio:
 		"La technologie Blockchain va changer le monde, chez Crypto Afrique Futur, nous ferrons de vous des acteurs majeurs de cette révolution !"
