@@ -1,6 +1,6 @@
 import { component } from "@astrojs/markdoc/config";
 
-const SITE_DOMAIN = "crypyohub.vercel.app/";
+const SITE_DOMAIN = "crypyohub.vercel.app";
 function getHrefTarget(attributes) {
 	const href = attributes.href;
 	if (

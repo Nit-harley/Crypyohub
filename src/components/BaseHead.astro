@@ -25,17 +25,17 @@ const { title = SITE.title, description, permalink, image } = Astro.props;
 {description && <meta name="description" content={description} />}
 <ViewTransitions />
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
 <link
   rel="shortcut icon"
   type="image/png"
   sizes="16x16"
-  href="/favicon-16x16.png"
+  href="/logo.png"
 />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="manifest" href="/site.webmanifest" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<link rel="mask-icon" href="/logo.png" color="#5bbad5" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="msapplication-TileColor" content="#da532c" />
@@ -72,5 +72,4 @@ const { title = SITE.title, description, permalink, image } = Astro.props;
   } else {
     document.documentElement.classList.add("dark");
   }
-   type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65d8b41d1eabb90019a54990&product=inline-share-buttons&source=platform" async="async">
 </script>

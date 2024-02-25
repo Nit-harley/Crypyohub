@@ -30,7 +30,7 @@ export const SITE = {
 	description: "",
 	url: "https://crypyohub.vercel.app",
 	githubUrl: "https://github.com/Nit-harley",
-	listDrafts: true,
+	listDrafts: false,
 	image:
 		"../assets/logo.png",
 	// YT video channel Id (used in media.astro)
@@ -49,7 +49,7 @@ export const SITE = {
 // Ink - Theme configuration
 export const PAGE_SIZE = 8;
 export const USE_POST_IMG_OVERLAY = false;
-export const USE_MEDIA_THUMBNAIL = false;
+export const USE_MEDIA_THUMBNAIL = true;
 
 export const USE_AUTHOR_CARD = true;
 export const USE_SUBSCRIPTION = false; /* works only when USE_AUTHOR_CARD is true */
