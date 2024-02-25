@@ -1,14 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: develop
-  publish_mode: editorial_workflow
-  repo: one-aalam/astro-ink # change this to your repo
-  site_domain: develop--cryptoblogblockchain.netlify.app # change this to your domain
-  base_url: https://develop--cryptoblogblockchain.netlify.app # change this to your prod URL
-  auth_scope: repo
-  auth_endpoint: oauth
-  display_url: https://develop--cryptoblogblockchain.netlify.app
-  logo_url: https://astro-ink.vercel.app/assets/logo.svg
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -22,7 +14,7 @@ public_folder: '/images/uploads'
 collections: # A list of collections the CMS should be able to edit
   - name: 'post' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Post' # Used in the UI, ie.: "New Post"
-    folder: 'src/content/blog' # The path to the folder where the documents are stored
+    folder: 'src/pages/blog' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "$/layouts/post.astro"}
