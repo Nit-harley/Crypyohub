@@ -1,26 +1,100 @@
 [
 	{
-		"title": "Astro: A New Architecture for the Modern Web",
-		"description": "JavaScript meetup for mad science, hacking, and experiments. Hang out virtually on Friday at 4pm Pacific Time each week.",
-		"url": "https://www.youtube.com/watch?v=mgkwZqVkrwo",
-		"host": "Feross",
-		"participants": ["Fred K. Schott"],
-		"date": "2021-06-08"
+		"title": "𝐂𝐨𝐦𝐦𝐞𝐧𝐭 𝐥𝐚 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐯𝐚 𝐭-𝐞𝐥𝐥𝐞 𝐜𝐡𝐚𝐧𝐠𝐞𝐫 𝐥𝐞 𝐦𝐨𝐧𝐝𝐞 ?",
+		"description": "Conférence blockchain sur Argenlivre avec la communauté des chercheurs d'argent donné par Harley Fondateur de Crypto Afrique Futur..!",
+		"url": "https://www.youtube.com/watch?v=-ZQGUtl1Ogk&t=4269s",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": ["Argenlivre, Communauté des chercheurs d'argent"],
+		"date": "2023-12-06"
 	},
 	{
-		"title": "Astro in 100 Seconds",
-		"description": "Astro is an open-source tool that can build static HTML websites using popular frontend JavaScript frameworks (React, Vue, Svelte), while loading fully interactive components as needed https://github.com/snowpackjs/astro",
-		"url": "https://www.youtube.com/watch?v=dsTXcSeAZq8",
-		"host": "Jeff Delaney",
-		"participants": [],
-		"date": "2021-07-12"
+		"title": "𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐝𝐮 𝐟𝐨𝐧𝐝𝐚𝐭𝐞𝐮𝐫 𝐝𝐞 𝐂𝐫𝐲𝐩𝐭𝐨 𝐀𝐟𝐫𝐢𝐪𝐮𝐞 𝐅𝐮𝐭𝐮𝐫",
+		"description": "Interview🎤 exclusive de Nit Harley Nguembhyt, 𝗖𝗘𝗢 𝗱𝗲 𝗖𝗿𝘆𝗽𝘁𝗼 𝗔𝗳𝗿𝗶𝗾𝘂𝗲 𝗙𝘂𝘁𝘂𝗿 sur Business Eco.o",
+		"url": "https://www.youtube.com/watch?v=qZcB9VH1_eY",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": ["Dario de Business ECO"],
+		"date": "2023-10-07"
 	},
+
 	{
-		"title": "Yapping About Astro",
-		"description": "Build a static-by-default site using JavaScript components and only load whatever JavaScript you need by opting in very carefully.",
-		"url": "https://www.youtube.com/watch?v=3jPaidbpUIA",
+		"title": "𝐓𝐞𝐞𝐳𝐞𝐫 𝐝𝐞 𝐥𝐚 𝐏𝐫𝐞𝐦𝐢è𝐫𝐞 𝐂𝐨𝐧𝐟é𝐫𝐞𝐧𝐜𝐞 𝐍𝐚𝐭𝐢𝐨𝐧𝐚𝐥𝐞 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐚𝐮 𝐆𝐚𝐛𝐨𝐧",
+		"description": "Le 24 Novembre 2023 fut une date historique dans l'écosysteme blockchain Gabonais au travers de cette conference extrordinaire ayant réuni tous les experts locaux du domaine de la blockchain",
+		"url": "https://www.youtube.com/watch?v=3irvDcOjqPM",
 		"host": "Chris Coyier",
 		"participants": [],
-		"date": "2021-08-02"
+		"date": "2023-10-12"
+	}
+	{
+		"title": "𝐃𝐞𝐯𝐞𝐧𝐢𝐫 𝐄𝐱𝐩𝐞𝐫𝐭 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐞𝐧 𝐀𝐟𝐫𝐢𝐪𝐮𝐞",
+		"description": "Dans cette vidéo, je t'explique pourquoi tu dois en tant qu'Africain, t'intéresser à la blockchain dès maintenant et comment devenir un expert blockchain🌍👨🏾💲 !!! ",
+		"url": "https://www.youtube.com/watch?v=jX7R5G8Zp6s&t=149s",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2023-05-06"
+	},
+	{
+		"title": "𝐋𝐚 𝐜𝐫𝐲𝐩𝐭𝐨𝐦𝐨𝐧𝐧𝐚𝐢𝐞 𝐩𝐨𝐮𝐫𝐫𝐚𝐢𝐭 𝐥𝐢𝐭𝐭𝐞𝐫𝐚𝐥𝐞𝐦𝐞𝐧𝐭 𝐫é𝐯𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐧𝐞𝐫 𝐥'𝐀𝐟𝐫𝐢𝐪𝐮𝐞 !",
+		"description": "Dans cette vidéo je t'explique points par points, comment la cryptomonnaie peu permettre à l'Afrique de retrouver ses lettres de noblesses et pourquoi pas conduire, aux États-Unis D'Afrique.",
+		"url": "https://www.youtube.com/watch?v=nJiRmFNcZx4",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2023-01-03"
+	},
+	{
+		"title": "𝐏𝐎𝐃𝐂𝐀𝐒𝐓 : 𝗗𝗲 𝗹𝗮 𝗕𝗹𝗼𝗰𝗸𝗰𝗵𝗮𝗶𝗻 à 𝗹𝗮 𝗱é𝗰𝗲𝗻𝘁𝗿𝗮𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 : 𝗜𝗱é𝗲 𝘂𝘁𝗶𝗹𝗲 𝗼𝘂 𝗳𝘂𝘁𝗶𝗹𝗲 𝗲𝗻 𝗔𝗳𝗿𝗶𝗾𝘂𝗲 ? ",
+		"description": "Dans ce Podcast nous verrons si il est utile ou pas de pronner la décentralisation en afrique à travers la technologie blockchain",
+		"url": "https://www.youtube.com/watch?v=2cbx-Sx6e5Q",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2023-08-31"
+	},
+	{
+		"title": "𝐏𝐎𝐃𝐂𝐀𝐒𝐓 : 𝐀𝐟𝐫𝐢𝐪𝐮𝐞 & 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 : 𝐃𝐮𝐨 𝐯𝐢𝐬𝐢𝐨𝐧𝐧𝐚𝐢𝐫𝐞 𝐨𝐮 𝐮𝐭𝐨𝐩𝐢𝐪𝐮𝐞 ?",
+		"description": "Dans ce Podcast nous allons tenter de nous projetter dans le futur pour voir si l'implementation et l'usage de la technologie blockchain en afrique est possible ou utopique",
+		"url": "https://www.youtube.com/watch?v=UqZWYi8WWwI&t=36s",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2023-07-13"
+	},
+	{
+		"title": "𝐑é𝐜𝐮𝐩é𝐫𝐞𝐫 𝐥𝐞 𝐜𝐨𝐧𝐭𝐫𝐨𝐥𝐞 𝐝𝐞 𝐬𝐞𝐬 𝐝𝐨𝐧𝐧é𝐞𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞𝐥𝐥𝐞𝐬 𝐬𝐮𝐫 𝐢𝐧𝐭𝐞𝐫𝐧𝐞𝐭",
+		"description": "Dans cette vidéo, je t'explique comment vous donnez accès à vos informations personnelles aux GAFAM sans forcément vous en rendre compte ! ",
+		"url": "https://www.youtube.com/watch?v=W1NygHVvwDs&t=28s",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2023-08-15"
+	},
+	{
+		"title": "𝐏𝐎𝐃𝐂𝐀𝐒𝐓 : 𝐕𝐨𝐢𝐜𝐢 𝐜𝐨𝐦𝐦𝐞𝐧𝐭 𝐟𝐨𝐧𝐜𝐭𝐢𝐨𝐧𝐧𝐞𝐧𝐭 𝐥𝐚 𝐜𝐫𝐲𝐩𝐭𝐨𝐦𝐨𝐧𝐧𝐚𝐢𝐞 𝐞𝐭 𝐥𝐚 𝐛𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧",
+		"description": "Dans ce podcast je te donne une bonne vision d'ensemble de l'écosystème crypto.",
+		"url": "https://www.youtube.com/watch?v=HuHkdB0Am1Q",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2022-08-04"
+	},
+	{
+		"title": "𝐖𝐞𝐛 𝟑.𝟎 : 𝐋𝐚 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐑é𝐯𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐧𝐞 𝐥'𝐢𝐧𝐭𝐞𝐫𝐧𝐞𝐭",
+		"description": "Dans cette vidéo je t'explique, comment fonctionne le web 3.0 et quels sont les avantages de ce nouveau web par rapport au web 2 et au web 1.0.",
+		"url": "https://www.youtube.com/watch?v=zqnLoVQShcI",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2022-07-31"
+	},
+	{
+		"title": "𝐋'𝐞𝐟𝐟𝐞𝐭 𝐂𝐚𝐧𝐭𝐢𝐥𝐥𝐨𝐧 𝐮𝐧𝐞 𝐢𝐧𝐣𝐮𝐬𝐭𝐢𝐜𝐞 𝐜𝐚𝐜𝐡é𝐞 𝐝𝐮 𝐬𝐲𝐬𝐭è𝐦𝐞 𝐟𝐢𝐧𝐚𝐧𝐜𝐢𝐞𝐫 𝐚𝐜𝐭𝐮𝐞𝐥 !",
+		"description": "Dans cette vidéo je t'explique pourquoi les riches deviennent de plus en plus riches et les pauvres de plus en plus pauvres à cause de l'effet cantillon.",
+		"url": "https://www.youtube.com/watch?v=eNQCxGMWqsg&t=5s",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2022-04-01"
+	},
+	{
+		"title": "𝐂𝐞𝐭𝐭𝐞 𝐈𝐀 𝐫𝐢𝐬𝐪𝐮𝐞 𝐝𝐞 𝐝é𝐭𝐫𝐮𝐢𝐫𝐞 𝐥𝐚 𝐯𝐢𝐞 𝐝𝐞 𝐦𝐢𝐥𝐥𝐢𝐞𝐫𝐬 𝐝𝐞 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞𝐬 !",
+		"description": "Dans cette vidéo, je t'explique comment l'intelligence artificielle peut nous nuire et nous faire perdre confiance en ce que l'on voit sur internet à travers le phénomène DEEPFAKE !",
+		"url": "https://www.youtube.com/watch?v=VOX1ugKwyeI",
+		"host": "NGUEMBHYT Nit harley",
+		"participants": [""],
+		"date": "2022-04-01"
 	}
 ]
+
