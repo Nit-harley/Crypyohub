@@ -6,6 +6,7 @@ import DefaultPageLayout from '$/layouts/default.astro'
 import PostPreviewList from '$/components/PostPreviewList.astro'
 import Prose from '$/components/Prose.astro'
 import { Content as AboutAstroInk } from './_astro-ink.md'
+import Feature from '../components/Feature.astro'
 
 
 const title = 'Acceuil'
@@ -28,6 +29,7 @@ const posts = await getCollection('blog')
         </div>
     </div>
     <hr/>
+    <Feature />
     <PostPreviewList posts={posts.slice(0, 3)} heading="recent posts"/>
 
     
