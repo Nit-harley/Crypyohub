@@ -1,0 +1,98 @@
+<script type="module">
+    const partners = [
+    {
+      name: '𝐃𝐢𝐬𝐢𝐜𝐤-𝐌𝐚𝐧',
+      description: 'Marque de vetement Gabonaise et évenementielle.',
+      image: '/images/uploads/Disick.png',
+      contactLink: 'https://web.facebook.com/DisickMan?mibextid=ZbWKwL&_rdc=1&_rdr' // Ajoutez le lien de contact pour chaque partenaire
+    },
+    {
+      name: '𝐈𝐅𝐈𝐌',
+      description: "Institut Facultaire d'Informatique et de Management au Gabon.",
+      image: '/images/uploads/ifim.png',
+      contactLink: 'https://www.ifimgabon.com/'
+    },
+    {
+      name: '𝐒𝐌𝐁',
+      description: "Société spécialisée dans l'accompagnement des entrepreneurs.",
+      image: '/images/uploads/smb.png',
+      contactLink: 'https://www.suivremonbusiness.com/'
+    },
+    {
+      name: '𝐂𝐂𝐀',
+      description: 'Communauté entrepreneuriale propulser par Argenlivre.',
+      image: '/images/uploads/communaute.png',
+      contactLink: 'https://web.facebook.com/Argenlivre/'
+    },
+    {
+      name: '𝐀𝐫𝐠𝐞𝐧𝐥𝐢𝐯𝐫𝐞',
+      description: "spécialisée dans l'accompagnement des auteurs Africains.",
+      image: '/images/uploads/argenlivre.png',
+      contactLink: 'https://www.argenlivre.com/'
+    },
+    {
+      name: '𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬𝐦𝐚𝐧𝐢𝐚',
+      description: 'Entreprise de formation en dévellopement blockchain.',
+      image: '/images/uploads/businessmania.png',
+      contactLink: 'https://businessmania.fr/?affcode=704206_imgx1sth'
+    }
+    // Les autres partenaires ...
+    ];
+  
+    let currentPartnerIndex = 0;
+  
+    function showPartner(index) {
+      const partnerSlider = document.getElementById('partner-slider');
+  
+      const partnerHTML = `
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 max-w-sm transition duration-500 ease-in-out transform hover:scale-105">
+          <img src="${partners[index].image}" alt="${partners[index].name}" class="max-h-24 mb-4" />
+          <h3 class="text-lg font-semibold mb-2 text-orange-600 dark:text-orange-300">${partners[index].name}</h3>
+          <p class="text-base text-gray-600 dark:text-gray-300 text-center mt-4">
+              ${partners[index].description}
+          </p>
+          <a href="${partners[index].contactLink}" class="text-orange-500 hover:text-orange-600 mt-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2-2-2m2 2h8m-8 4H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4l4 4v6a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-4l4-4z" />
+    </svg> <!-- Icône de lien -->
+</a>
+        </div>
+      `;
+      partnerSlider.innerHTML = partnerHTML;
+    }
+  
+    function prevPartner() {
+      currentPartnerIndex = (currentPartnerIndex - 1 + partners.length) % partners.length;
+      showPartner(currentPartnerIndex);
+    }
+  
+    function nextPartner() {
+      currentPartnerIndex = (currentPartnerIndex + 1) % partners.length;
+      showPartner(currentPartnerIndex);
+    }
+  
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+  
+    prevBtn.addEventListener('click', prevPartner);
+    nextBtn.addEventListener('click', nextPartner);
+  
+    // Afficher le premier partenaire au chargement de la page
+    window.addEventListener('DOMContentLoaded', () => {
+      showPartner(currentPartnerIndex);
+    });
+</script>
+
+<div class="flex justify-center items-center">
+    <button id="prevBtn" class="prev-btn mr-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg> <!-- Icône de flèche gauche -->
+    </button>
+    <div id="partner-slider" class="partner-slider flex items-center justify-center max-w-sm"></div>
+    <button id="nextBtn" class="next-btn ml-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg> <!-- Icône de flèche droite -->
+    </button>
+</div>

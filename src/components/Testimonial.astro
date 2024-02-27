@@ -1,0 +1,61 @@
+<script type="module">
+    const partners = [
+      {
+        name: 'Disick',
+        description: 'Description du partenaire Disick.',
+        image: '/images/uploads/Disick.png'
+      },
+      {
+        name: 'IFIM',
+        description: 'Description du partenaire IFIM.',
+        image: '/images/uploads/ifim.png'
+      },
+      // Ajoutez d'autres partenaires au besoin
+    ];
+  
+    let currentPartnerIndex = 0;
+  
+    function showPartner(index) {
+      const partnerSlider = document.getElementById('partner-slider');
+  
+      const partnerHTML = `
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 max-w-sm transition duration-500 ease-in-out transform hover:scale-105">
+          <img src="${partners[index].image}" alt="${partners[index].name}" class="max-h-24 mb-4" />
+          <h3 class="text-lg font-semibold mb-2 text-orange-600 dark:text-orange-300">${partners[index].name}</h3>
+          <p class="text-base text-gray-600 dark:text-gray-300">${partners[index].description}</p>
+        </div>
+      `;
+      partnerSlider.innerHTML = partnerHTML;
+    }
+  
+    function prevPartner() {
+      currentPartnerIndex = (currentPartnerIndex - 1 + partners.length) % partners.length;
+      showPartner(currentPartnerIndex);
+    }
+  
+    function nextPartner() {
+      currentPartnerIndex = (currentPartnerIndex + 1) % partners.length;
+      showPartner(currentPartnerIndex);
+    }
+  
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+  
+    prevBtn.addEventListener('click', prevPartner);
+    nextBtn.addEventListener('click', nextPartner);
+  
+    // Afficher le premier partenaire au chargement de la page
+    window.addEventListener('DOMContentLoaded', () => {
+      showPartner(currentPartnerIndex);
+    });
+</script>
+
+<div class="flex justify-center items-center">
+    <button id="prevBtn" class="prev-btn mr-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">Prev</button>
+    <div id="partner-slider" class="partner-slider flex items-center justify-center"></div>
+    <button id="nextBtn" class="next-btn ml-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">Next</button>
+</div>
+<div class="text-center mt-8">
+    <h3 id="partner-name" class="text-lg font-semibold text-orange-600 dark:text-orange-300"></h3>
+    <p id="partner-description" class="text-base text-gray-600 dark:text-gray-300"></p>
+</div>

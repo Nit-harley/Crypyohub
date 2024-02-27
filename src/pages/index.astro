@@ -7,7 +7,7 @@ import PostPreviewList from '$/components/PostPreviewList.astro'
 import Prose from '$/components/Prose.astro'
 import { Content as AboutAstroInk } from './_astro-ink.md'
 import Feature from '../components/Feature.astro'
-
+import Partners from '../components/Partners.astro'
 
 const title = 'Acceuil'
 const description = 'Votre moteur de recherche blockchain made in Africa sur Crypto Afrique Futur'
@@ -41,31 +41,17 @@ const posts = await getCollection('blog')
       <button id="accept-cookies" class="mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">Accepter les cookies</button>
       <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser les cookies</button>
   </div>
-    <div class="container mx-auto py-12 flex flex-col items-center">
-        <h2 class="text-3xl font-semibold mb-6  tracking-tight text-orange-600 dark:text-orange-300">𝐍𝐨𝐬 𝐩𝐚𝐫𝐭𝐞𝐧𝐚𝐢𝐫𝐞𝐬</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/Disick.png" alt="Logo partenaire 1" class="max-h-12" />
-          </div>
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/ifim.png" alt="Logo partenaire 2" class="max-h-12" />
-          </div>
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/smb.png" alt="Logo partenaire 2" class="max-h-12" />
-          </div>
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/communaute.png" alt="Logo partenaire 2" class="max-h-12" />
-          </div>
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/argenlivre.png" alt="Logo partenaire 2" class="max-h-12" />
-          </div>
-          <div class="flex justify-center items-center p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/images/uploads/businessmania.png" alt="Logo partenaire 2" class="max-h-12" />
-          </div>
-        </div>
-      </div>
+   
+  
+  <div class='text-center sm:text-center md:text-center lg:text-center xl:text-center'> 
+    <!-- Autres contenus de votre page d'accueil --> 
+    <h2 class="text-3xl font-semibold mb-6 tracking-tight text-orange-500 dark:text-orange-300">𝐍𝐨𝐬 𝐩𝐚𝐫𝐭𝐞𝐧𝐚𝐢𝐫𝐞𝐬</h2> 
+    <!-- Inclure le composant de témoignage --> 
+</div>
 
-      <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-50"></div>
+<Partners/>
+
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-50"></div>
       <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
         <p class="mb-2">Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
         <div class="flex justify-center">
