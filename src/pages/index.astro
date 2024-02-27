@@ -29,7 +29,9 @@ const posts = await getCollection('blog')
         </div>
     </div>
     <hr/>
+    <Prose>
     <Feature />
+    </Prose>
     <PostPreviewList posts={posts.slice(0, 3)} heading="recent posts"/>
 
     
@@ -45,11 +47,13 @@ const posts = await getCollection('blog')
   
   <div class='text-center sm:text-center md:text-center lg:text-center xl:text-center'> 
     <!-- Autres contenus de votre page d'accueil --> 
-    <h2 class="text-3xl font-semibold mb-6 tracking-tight text-orange-500 dark:text-orange-300">𝐍𝐨𝐬 𝐩𝐚𝐫𝐭𝐞𝐧𝐚𝐢𝐫𝐞𝐬</h2> 
+    <h2 class="text-3xl font-semibold mb-10 tracking-tight text-orange-500 dark:text-orange-300">𝐍𝐨𝐬 𝐩𝐚𝐫𝐭𝐞𝐧𝐚𝐢𝐫𝐞𝐬</h2> 
+    <!-- Ajoutez de la marge après le titre -->
+    <div class="mb-10"></div> <!-- Cela ajoute une marge de 8 unités de l'espace bas -->
     <!-- Inclure le composant de témoignage --> 
+    <Partners/> <!-- Assurez-vous que votre composant est correctement inclus ici -->
 </div>
 
-<Partners/>
 
     <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-50"></div>
       <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 text-center hidden">
