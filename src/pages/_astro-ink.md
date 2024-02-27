@@ -1,3 +1,5 @@
-Bienvenue sur, **Crypto Afrique Futur** 🚀 Votre guide de référence pour la blockchain en Afrique ! nous vous offrons un accès simplifié à l'information vous permettant de vous documenter et d'évoluer dans cet univers révolutionnaire. Explorez, apprenez et découvrez les opportunités sans précédent que la technologie blockchain offre à notre continent.
-### 𝐕𝐨𝐮𝐬 𝐬𝐨𝐮𝐡𝐚𝐢𝐭𝐞𝐳 𝐫𝐞𝐜𝐞𝐯𝐨𝐢𝐫 𝐮𝐧 𝐚𝐜𝐜𝐨𝐦𝐩𝐚𝐠𝐧𝐞𝐦𝐞𝐧𝐭 ?
-**Contactez-nous:** [@cryptoafriquefutur](https://www.linkedin.com/company/crypto-afrique-futur)
+Bienvenue sur, **Crypto Afrique Futur** <br>
+Votre guide de référence pour la blockchain en Afrique !
+Nous vous offrons un accès simplifié à l'information vous permettant de vous documenter et d'évoluer dans ce domaine révolutionnaire. 
+Explorez, apprenez et découvrez les opportunités sans précédent que la technologie blockchain vous offre <br>
+### 𝐁𝐨𝐧𝐧𝐞 𝐯𝐢𝐬𝐢𝐭𝐞 !
