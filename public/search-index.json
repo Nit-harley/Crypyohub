@@ -1,10 +1,26 @@
 [
     {
+        "slug":"blockchain-nft",
+        "category":"blog",
+        "title":"𝐐𝐮'𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮'𝐮𝐧 𝐍𝐅𝐓, 𝐞𝐭 𝐜𝐨𝐦𝐦𝐞𝐧𝐭 ç𝐚 𝐦𝐚𝐫𝐜𝐡𝐞 ?",
+        "description":"Découvrez les NFT, des actifs numériques uniques sur la blockchain, allant bien au-delà de l'art et des collections. Cet article est votre guide complet pour comprendre leur création, leur achat et leur vente.",
+        "tags":["NFT","Token","Blockchain", "Cryptomonnaie", "Token Non Fongible"],
+        "body":"Un NFT est un type d’actif numérique, semblable à une cryptomonnaie (avec toutefois quelques différences importantes). Les NFT sont le plus souvent associés à des œuvres d’art numériques uniques ou à d’autres objets de collection qui peuvent être « mintés » par un artiste ou un designer et vendus exclusivement à un seul acheteur (souvent en échange de cryptomonnaies). Mais leur spectre d’applications est beaucoup plus large que celui de l’art et des objets de collection."
+    },
+    {
+        "slug":"minage-afrique",
+        "category":"blog",
+        "title":"𝐋𝐞 𝐦𝐢𝐧𝐚𝐠𝐞 𝐝𝐞 𝐁𝐢𝐭𝐜𝐨𝐢𝐧 𝐞𝐧 𝐀𝐟𝐫𝐢𝐪𝐮𝐞 - 𝐔𝐧 𝐦𝐨𝐭𝐞𝐮𝐫 𝐩𝐨𝐭𝐞𝐧𝐭𝐢𝐞𝐥 𝐝𝐞 𝐜𝐫𝐨𝐢𝐬𝐬𝐚𝐧𝐜𝐞 é𝐜𝐨𝐧𝐨𝐦𝐢𝐪𝐮𝐞 ?",
+        "description":"Cet article explore le potentiel du minage de cryptomonnaies en Afrique en tant que moteur de développement économique et de durabilité environnementale.",
+        "tags":["Minage","Bitcoin","Afrique", "Cryptomonnaie"],
+        "body":"L’émergence des cryptomonnaies a ouvert de nouvelles perspectives économiques à travers le monde. Le minage, qui consiste à valider les transactions effectuées sur une blockchain, est une activité lucrative pour de nombreux investisseurs. Dans ce contexte, l’Afrique, avec ses vastes ressources naturelles et son potentiel technologique en plein essor, se positionne comme un acteur majeur potentiel dans le domaine du minage. "
+    },
+    {
         "slug":"minage-bitcoin",
         "category":"blog",
         "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐥𝐞 𝐦𝐢𝐧𝐚𝐠𝐞 𝐝𝐞 𝐁𝐢𝐭𝐜𝐨𝐢𝐧 ?",
         "description":"Dans cet article vous découvrirez ce qu'est le minage, sont utilité pour la blockchain Bitcoin et comment potentiellement vous lancer",
-        "tags":["Minage","Bitcoin","Mineurs", "Definition", "Cryptomonnaie"],
+        "tags":["Minage","Bitcoin", "Definition", "Cryptomonnaie"],
         "body":"Pourquoi Bitcoin a besoin de mineurs, Qu’est-ce que le minage de Bitcoin ?, Pourquoi miner du Bitcoin ?, Quel est le montant de la récompense, Alving  "
     },
     {
