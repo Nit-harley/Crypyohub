@@ -1,27 +1,30 @@
 ---
     import { SITE } from '$/config'
     import ModeLabel from './ModeLabel.svelte'
-    import { SITE } from '$/config'
-    import ModeLabel from './ModeLabel.svelte'
     import NetlifyIdentity from './NetlifyIdentity.svelte'
 ---
 
 <footer class="mt-20 xl:mt-32 mx-auto w-full relative text-center bg-orange-600 text-white">
     <!-- Dans votre fichier de modèle ou de pied de page, juste avant la balise </body> -->
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var backToTopBtn = document.getElementById('back-to-top');
+
+    // Afficher ou masquer le bouton en fonction du défilement de la page
     window.addEventListener('scroll', function() {
-      let backToTop = document.getElementById('back-to-top');
-      if (window.scrollY > 100) {
-        backToTop.classList.remove('hidden');
-      } else {
-        backToTop.classList.add('hidden');
-      }
+        if (window.scrollY > 100) {
+            backToTopBtn.classList.remove('hidden');
+        } else {
+            backToTopBtn.classList.add('hidden');
+        }
     });
-  
-    document.getElementById('back-to-top').addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Faire défiler la page vers le haut lorsque le bouton est cliqué
+    backToTopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+});
   </script>
   
     <div class="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">

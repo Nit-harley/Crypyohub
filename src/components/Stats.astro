@@ -1,56 +1,60 @@
 <p class='text-3xl font-semibold mb-6 text-center tracking-tight text-orange-600 dark:text-orange-300'>
-    Réalisations
-  </p>
-  <p class='mt-4 text-center text-gray-600 dark:text-gray-50 lg:mx-auto'>
-    Dans cette section, plongeons dans les chiffres et les résultats qui racontent 
-    <br>l'histoire de notre parcours de 2021 jusqu'à présent.
-  </p>
-  
-  <section class="statistics mt-10">
-    <div class="flex flex-wrap justify-center lg:justify-between">
+  Réalisations
+</p>
+<p class='mt-4 text-center text-gray-600 dark:text-gray-50 lg:mx-auto'>
+  Dans cette section, plongeons dans les chiffres et les résultats qui racontent 
+  <br>l'histoire de notre parcours de 2021 jusqu'à présent.
+</p>
+
+<section class="statistics mt-10">
+  <div class="flex flex-wrap justify-center lg:justify-between">
       <div class="stat-box text-center mb-6 lg:mb-0">
-        <h3 class="text-2xl font-semibold">+367</h3>
-        <p class="text-gray-600 dark:text-gray-300">Clients Satisfaits</p>
+          <h3 class="text-2xl font-semibold">+367</h3>
+          <p class="text-gray-600 dark:text-gray-300">Clients Satisfaits</p>
       </div>
       <div class="stat-box text-center mb-6 lg:mb-0">
-        <h3 class="text-2xl font-semibold">10k+</h3>
-        <p class="text-gray-600 dark:text-gray-300">Abonnés</p>
+          <h3 class="text-2xl font-semibold">10k+</h3>
+          <p class="text-gray-600 dark:text-gray-300">Abonnés</p>
       </div>
       <div class="stat-box text-center mb-6 lg:mb-0">
-        <h3 class="text-2xl font-semibold">+200</h3>
-        <p class="text-gray-600 dark:text-gray-300">Contenu Gratuit</p>
+          <h3 class="text-2xl font-semibold">+400h</h3>
+          <p class="text-gray-600 dark:text-gray-300">Contenu Vidéo</p>
       </div>
       <div class="stat-box text-center">
-        <h3 class="text-2xl font-semibold">5+</h3>
-        <p class="text-gray-600 dark:text-gray-300">Projets Réalisés</p>
+          <h3 class="text-2xl font-semibold">5+</h3>
+          <p class="text-gray-600 dark:text-gray-300">Projets Réalisés</p>
       </div>
-    </div>
-  </section>
-  
-  <style>
-    .box {
-        border: 1px solid var(--gray-800);
-        border-radius: 0.75rem;
-        padding: 1.5rem;
-        background-color: var(--gray-999_40);
-        box-shadow: var(--shadow-sm);
-    }
-  
-    .statistics {
+  </div>
+</section>
+
+<style>
+  .box {
+      border: 1px solid var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background-color: var(--gray-999_40);
+      box-shadow: var(--shadow-sm);
+  }
+
+  .statistics {
       background-color: var(--gray-999_40);
       border: 1px solid var(--gray-800);
       border-radius: 0.75rem;
       padding: 2rem;
       box-shadow: var(--shadow-sm);
-    }
-  
-    .stat-box {
+      display: flex;
+      flex-direction: column; /* Change la direction en colonne sur les petits écrans */
+      align-items: center; /* Centre les éléments sur les petits écrans */
+  }
+
+  .stat-box {
       flex: 1;
       padding: 1.5rem;
       border: 1px solid var(--gray-800);
       border-radius: 0.5rem;
       background-color: var(--gray-800);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-      max-width: 200px; /* Limit the width of stat boxes */
-    }
-  </style>
+      max-width: 200px; /* Limite la largeur des boîtes de statistiques */
+      margin-bottom: 1rem; /* Ajoute un espacement entre les boîtes de statistiques */
+  }
+</style>
