@@ -4,7 +4,9 @@ description: "En savoir plus sur Crypto Afrique Futur..."
 ---
 import DefaultPageLayout from '$/layouts/default.astro'
 import Prose from '$/components/Prose.astro'
-
+import Steps from '../components/Steps.astro'
+import Temoignage from '../components/Temoignage.astro'
+import Stats from '../components/Stats.astro'
 
 <DefaultPageLayout content={{ title: frontmatter.title, description: frontmatter.description }}>
 
@@ -12,10 +14,11 @@ import Prose from '$/components/Prose.astro'
     <Prose>
     
    
-        **Crypto Afrique Futur** est le leader de la démocratisation de la vulgarisation et de l'adoption de la technologie blockchain en Afrique francophone depuis 2021 avec plus de 400 élévés formés à travers l'Afrique et une communauté de plus de 30.000 membres.
+         
 
-        Chez **Crypto Afrique Futur** Nous formons les leaders blockchain de demain en fournissant des cours de haute qualité qui rendent la technologie blockchain accessible à tous. de ce fait, nous accompagnons les entreprises et les particuliers souhaitant se lancer dans le domaine de la blockchain. 
-
+          <Steps/>
+          <Stats/>
+          <Temoignage/>
         ## 𝐀𝐮𝐭𝐞𝐮𝐫
         NGUEMBHYT Nit Harley // [@CryptoAfriqueF1](https://twitter.com/CryptoAfriqueF1)  // [Nit-Harley](https://twitter.com/CryptoAfriqueF1)
         <div class="author">

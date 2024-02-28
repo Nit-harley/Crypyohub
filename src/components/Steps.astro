@@ -1,10 +1,91 @@
+---
+import Icon from './Icon.astro';
+---
 
-    <div class="flex flex-col text-center w-full mb-20">
-      
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-         Crypto Afrique Futur est un cabinet de conseil, d'accompagnement et de formation blockchain 
-          <br>Notre mission est d'accompagner les entreprises et les particuliers en Afrique dans leur découverte et leur adoption de la technologie blockchain et des outils Web3. Nous croyons fermement que le futur de l'Afrique réside dans la maîtrise de ces technologies révolutionnaires.
-      </p>
-    </div>
+<p class="text-center"> <strong> Crypto Afrique Futur</strong> est un cabinet de conseil et d'accompagnement blockchain, nous accompagnons les entreprises et les particuliers dans leur découverte et leur adoption de la technologie blockchain et des outils Web3. Nous croyons fermement que le futur de l'Afrique réside dans la maîtrise de ces technologies révolutionnaires.</p>
+<p class='text-3xl font-semibold mb-6 text-center tracking-tight text-orange-600 dark:text-orange-300'>
+  Nos Services
+</p>
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4 ">
+      <Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+      <h2>Conseil & Experise</h2>
+      <p>Analyse approfondie de votre entreprise pour identifier des opportunités uniques d'intégration blockchain.</p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+      <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+      <h2>Solution Web3 sur Mesure</h2>
+      <p>Création et personnalisation de solutions Web3 pour répondre à vos exigences spécifiques.</p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+      <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+      <h2>Formation</h2>
+      <p>Nous ne vous fournissons pas seulement des solutions, nous vous autonomisons avec le savoir.</p>
+  </div>
+</section>
 
+<style>
+  :root {
+    --text-color-light: var(--gray-900); /* Light mode text color */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color-light: var(--gray-100); /* Dark mode text color */
+    }
+}
+  .box {
+      border: 1px solid var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background-color: var(--gray-999_40);
+      box-shadow: var(--shadow-sm);
+  }
+
+  .skills .stack {
+    border: 1px solid var(--gray-800); /* Add border */
+    border-radius: 0.5rem; /* Adjust border radius */
+    padding: 1.5rem; /* Adjust padding */
+    background-color: var(--gray-800); /* Add background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+
+  .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      border: 1px solid var(--gray-800);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+ 
+  }
+
+  .skills h2 {
+      font-size: var(--text-lg);
+      margin-bottom: 0.5rem; /* Added margin bottom for better separation */
+  }
+
+  .skills p {
+      color: var(--gray-400);
+      line-height: 1.5; /* Adjusted line height for better readability */
+  }
+
+  @media (min-width: 50em) {
+      .box {
+          border-radius: 1.5rem;
+          padding: 2.5rem;
+      }
+
+      .skills {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 5rem;
+      }
+
+      .skills h2 {
+          font-size: var(--text-2xl);
+      }
+  }
+</style>
 

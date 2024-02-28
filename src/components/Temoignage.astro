@@ -1,112 +1,94 @@
-  
-    <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- SITE PAGE TITLE -->
-            <title></title>
-            <!-- SITE PAGE DESCRIPTION -->
-            <meta name="description" content="Bring everyone together to build better products.">
-            <!-- SITE AUTHORS -->
-            <meta name="author" content="Aman Singh Bhogal & Frontend Mentor">
-            <!-- FAVICON -->
-            <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon" sizes="32x32">
-            <!-- TAILWIND ASSETS (FOR CLIENT DEPLOYMENT) -->
-            <script src="https://cdn.tailwindcss.com"></script>
-            <!-- SWIPER JS STYLESHEET -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-            <!-- MAIN STYLESHEET -->
-            <link rel="stylesheet" href="public/output.css">
-            <!-- SWIPER JS SCRIPT -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
-            <!-- EMAIL VALIDATION SCRIPT -->
-            <script src="src/js/email-validation.js" defer></script>
-            <!-- MOBILE NAV MENU SCRIPT -->
-            <script src="src/js/mobile-nav-menu.js" defer></script>
-            <!-- TESTIMONIAL SLIDER SCRIPT -->
-            <script src="src/js/testimonial-slider.js" defer></script>
-            <!-- TEMPORARILY USING GOOGLE FONTS FROM SERVER -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
-        </head>
-        <body> 
-    <section id="testimonials" class="overflow-hidden py-10">
-      <h2 class="text-4xl font-bold text-center py-6">Temoignages</h2>
-      <div class="flex container mx-auto">
-        <!-- SWIPER -->
-        <div class="flex flex-col swiper testimonial-slider py-16 w-full h-full md:flex-row">
-            <div class="flex swiper-wrapper">
-              <!-- TESTIMONIAL 1 -->
-              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray w-full">
-                <img src="/assets/temoignage1.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">                 
-              </div>
-              <!-- TESTIMONIAL 2 -->
-              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
-                <img src="/assets/temoignage2.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">              </div>
-              <!-- TESTIMONIAL 3 -->
-              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
-                <img src="/assets/temoignage3.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">
-              </div>
-              <!-- TESTIMONIAL 4 -->
-              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
-                <img src="/assets/temoignage4.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">              </div>
-            </div>
-            
-           
-            <!-- PAGINATION BUBBLES -->
-          <div class="swiper-pagination"></div>
-          </div> 
-      </div>
-      <div class="flex flex-col py-6 mx-auto items-center xl:pt-1 xl:pb-32">
-          <div class="button">
-              <a href="https://wa.me/+24177976941" class="cta-button p-3 px-6 pt-2 text-veryLightGray bg-brightRed rounded-full baseline transition ease-in baseline hover:text-brightRedLight">
-                  Nous contacter
-              </a>
-          </div>
-      </div>
-    
-  </section>
-  <script>
-    let swiper = new Swiper(".testimonial-slider", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    centerSlide: 'true',
-    loopFillGroupWithBlank: false,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+<p class='text-3xl font-semibold mb-6 text-center tracking-tight text-orange-600 dark:text-orange-300'>
+    Temoignages
+  </p>
+<script type="module">
 
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        clickable: true,
-    },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        375: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        976: {
-            slidesPerView: 3,
-        },
-        1440: {
-            slidesPerView: 3
-        }
+    const testimonials = [
+    {
+      image: '/assets/temoignage1.png'
+    },
+    {
+      image: '/assets/temoignage2.png'
+    },
+    {
+      image: '/assets/temoignage3.png'
+    },
+    {
+      image: '/assets/temoignage4.png'
+    },
+    {
+      image: '/assets/temoignage5.png'
+    },
+    {
+      image: '/assets/temoignage6.png'
+    },
+    {
+      image: '/assets/temoignage7.png'
+    },
+    {
+      image: '/assets/temoignage8.png'
+    },
+    // Ajoutez d'autres captures d'écran de témoignage ici
+    ];
+
+    let currentTestimonialIndex = 0;
+
+    function showTestimonial(index) {
+      const testimonialSlider = document.getElementById('testimonial-slider');
+
+      const testimonialHTML = `
+        <img src="${testimonials[index].image}" alt="Testimonial Screenshot" class="max-w-full" />
+      `;
+      testimonialSlider.innerHTML = testimonialHTML;
     }
-});
-  </script>
-    
-  </body>
-  </html>
+
+    function prevTestimonial() {
+      currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
+    }
+
+    function nextTestimonial() {
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
+    }
+
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    prevBtn.addEventListener('click', prevTestimonial);
+    nextBtn.addEventListener('click', nextTestimonial);
+
+    // Afficher le premier témoignage au chargement de la page
+    window.addEventListener('DOMContentLoaded', () => {
+      showTestimonial(currentTestimonialIndex);
+    });
+</script>
+
+<div class="flex justify-center items-center">
+    <button id="prevBtn" class="prev-btn mr-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg> <!-- Icône de flèche gauche -->
+    </button>
+    <div id="testimonial-slider" class="testimonial-slider flex items-center justify-center max-w-sm"></div>
+    <button id="nextBtn" class="next-btn ml-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-md hover:bg-orange-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg> <!-- Icône de flèche droite -->
+    </button>
+</div>
+
+<style>
+
+.testimonial-slider img {
+        max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+        border-radius: 8px; /* Ajoutez une bordure arrondie */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour un effet de profondeur */
+        transition: transform 0.3s ease; /* Ajoutez une transition pour un effet de survol */
+    }
+
+    .testimonial-slider img:hover {
+        transform: scale(1.05); /* Effectuez un agrandissement léger de l'image au survol */
+    }
+</style>
