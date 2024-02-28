@@ -1,0 +1,112 @@
+  
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- SITE PAGE TITLE -->
+            <title></title>
+            <!-- SITE PAGE DESCRIPTION -->
+            <meta name="description" content="Bring everyone together to build better products.">
+            <!-- SITE AUTHORS -->
+            <meta name="author" content="Aman Singh Bhogal & Frontend Mentor">
+            <!-- FAVICON -->
+            <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon" sizes="32x32">
+            <!-- TAILWIND ASSETS (FOR CLIENT DEPLOYMENT) -->
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- SWIPER JS STYLESHEET -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+            <!-- MAIN STYLESHEET -->
+            <link rel="stylesheet" href="public/output.css">
+            <!-- SWIPER JS SCRIPT -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+            <!-- EMAIL VALIDATION SCRIPT -->
+            <script src="src/js/email-validation.js" defer></script>
+            <!-- MOBILE NAV MENU SCRIPT -->
+            <script src="src/js/mobile-nav-menu.js" defer></script>
+            <!-- TESTIMONIAL SLIDER SCRIPT -->
+            <script src="src/js/testimonial-slider.js" defer></script>
+            <!-- TEMPORARILY USING GOOGLE FONTS FROM SERVER -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+        </head>
+        <body> 
+    <section id="testimonials" class="overflow-hidden py-10">
+      <h2 class="text-4xl font-bold text-center py-6">Temoignages</h2>
+      <div class="flex container mx-auto">
+        <!-- SWIPER -->
+        <div class="flex flex-col swiper testimonial-slider py-16 w-full h-full md:flex-row">
+            <div class="flex swiper-wrapper">
+              <!-- TESTIMONIAL 1 -->
+              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray w-full">
+                <img src="/assets/temoignage1.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">                 
+              </div>
+              <!-- TESTIMONIAL 2 -->
+              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
+                <img src="/assets/temoignage2.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">              </div>
+              <!-- TESTIMONIAL 3 -->
+              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
+                <img src="/assets/temoignage3.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">
+              </div>
+              <!-- TESTIMONIAL 4 -->
+              <div class="flex flex-col items-center shrink-0 swiper-slide text-center p-6 space-y-6 rounded-lg bg-veryLightGray">
+                <img src="/assets/temoignage4.png" class="w-64 h-64 mb-4" alt="Capture d'écran du témoignage de Shanai Gough">              </div>
+            </div>
+            
+           
+            <!-- PAGINATION BUBBLES -->
+          <div class="swiper-pagination"></div>
+          </div> 
+      </div>
+      <div class="flex flex-col py-6 mx-auto items-center xl:pt-1 xl:pb-32">
+          <div class="button">
+              <a href="https://wa.me/+24177976941" class="cta-button p-3 px-6 pt-2 text-veryLightGray bg-brightRed rounded-full baseline transition ease-in baseline hover:text-brightRedLight">
+                  Nous contacter
+              </a>
+          </div>
+      </div>
+    
+  </section>
+  <script>
+    let swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    centerSlide: 'true',
+    loopFillGroupWithBlank: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        375: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        976: {
+            slidesPerView: 3,
+        },
+        1440: {
+            slidesPerView: 3
+        }
+    }
+});
+  </script>
+    
+  </body>
+  </html>
