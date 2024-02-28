@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-defi",
+        "category":"blog",
+        "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐥𝐚 𝐟𝐢𝐧𝐚𝐧𝐜𝐞 𝐝𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐬𝐞 (𝐃𝐞𝐅𝐈 ?",
+        "description":"Dans cet article, découvrez la DeFi une révolution financière sans banques, basée sur la blockchain. Explorez ses avantages et ses risques. La finance du futur est là.",
+        "tags":["DeFI","Finance","Decentralise","Blockchain", "Token"],
+        "body":"La finance décentralisée (DeFi) désigne la grande variété de produits et services financiers disponibles sans autorité centralisée comme une banque. Cette décentralisation, rendue possible par les blockchains et les contrats intelligents, est au cœur du Web3."
+    },
+    {
         "slug":"blockchain-nft",
         "category":"blog",
         "title":"𝐐𝐮'𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮'𝐮𝐧 𝐍𝐅𝐓, 𝐞𝐭 𝐜𝐨𝐦𝐦𝐞𝐧𝐭 ç𝐚 𝐦𝐚𝐫𝐜𝐡𝐞 ?",
