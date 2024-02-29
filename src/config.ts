@@ -30,7 +30,7 @@ export const SITE = {
 	description: "",
 	url: "https://criptohub.netlify.app/",
 	githubUrl: "https://github.com/Nit-harley",
-	listDrafts: true,
+	listDrafts: false,
 	image:
 		"/assets/logo.png",
 	// YT video channel Id (used in media.astro)
