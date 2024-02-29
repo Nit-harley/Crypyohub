@@ -30,7 +30,7 @@ export const SITE = {
 	description: "",
 	url: "https://criptohub.netlify.app/",
 	githubUrl: "https://github.com/Nit-harley",
-	listDrafts: false,
+	listDrafts: true,
 	image:
 		"/assets/logo.png",
 	// YT video channel Id (used in media.astro)
@@ -47,7 +47,7 @@ export const SITE = {
 		"La technologie Blockchain va changer le monde, chez Crypto Afrique Futur, nous ferrons de vous des acteurs majeurs de cette révolution !"
 }
 // Ink - Theme configuration
-export const PAGE_SIZE = 8;
+export const PAGE_SIZE = 5;
 export const USE_POST_IMG_OVERLAY = false;
 export const USE_MEDIA_THUMBNAIL = true;
 

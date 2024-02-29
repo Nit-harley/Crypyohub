@@ -60,7 +60,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                             <Icon class="w-5 h-5 inline-block" pack="mdi" name="eye" />
                             <PostStats slug={meta?.slug} client:load /> 
                         }
-                         | <Icon class="w-5 h-5 inline-block" pack="mdi" name="clock" /> 10 mins 
+                         | <Icon class="w-5 h-5 inline-block" pack="mdi" name="clock" /> 10 mins de lecture
                     </span>
                 </div>
             </h5>
@@ -98,7 +98,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                             <form action="" class="subscription-form">
                                 <label for="email"></label>
                                 <input type="email" name="email" class="flex-grow border-0 text-theme-accent-gray-dark" required="true">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">S'abonner</button>
                             </form> :
                             <a class="author-card__follow-btn button" target="_blank" href={`https://twitter.com/intent/follow?screen_name=${AUTHOR_TWITTER}`}><Icon class="w-5 h-5 inline-block" pack="mdi" name="twitter" /> Follow on Twitter</a>
                         }

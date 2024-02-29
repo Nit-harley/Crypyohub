@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-wallet",
+        "category":"blog",
+        "title":"𝐐𝐮’𝐞𝐬𝐭-𝐜𝐞 𝐪𝐮'𝐮𝐧 𝐰𝐚𝐥𝐥𝐞𝐭 ?",
+        "description":" Découvrez comment les portefeuilles blockchain révolutionnent la gestion des crypto-monnaies en offrant sécurité, simplicité et efficacité dans les transactions blockchain.",
+        "tags":["Wallet","Portefeuille","Defi","Blockchain", "Crypto"],
+        "body":"Un portefeuille blockchain est un logiciel qui permet d'envoyer et de recevoir des crypto-monnaies telles que [Bitcoin](https://www.geeksforgeeks.org/what-is-bitcoin/) , [Ethereum,](https://www.geeksforgeeks.org/introduction-to-ethereum-part-1/) etc. Il stocke l'enregistrement des transactions ainsi que les clés publiques et privées utilisées pour effectuer des transactions. "
+    },
+    {
         "slug":"blockchain-defi",
         "category":"blog",
         "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐥𝐚 𝐟𝐢𝐧𝐚𝐧𝐜𝐞 𝐝𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐬𝐞 (𝐃𝐞𝐅𝐈 ?",
