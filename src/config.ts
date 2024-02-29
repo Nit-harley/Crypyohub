@@ -39,7 +39,7 @@ export const SITE = {
 	// Author: name
 	author: "NGUEMBHYT Nit Harley", // Example: Fred K. Schott
 	// Author: Twitter handler
-	authorLinkedin: "NGUEMBHYT Nit Harley", // Example: FredKSchott
+	authorLinkedin: "CryptoAfriqueF1", // Example: FredKSchott
 	// Author: Image external source
 	authorImage: "/assets/image.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
@@ -47,7 +47,7 @@ export const SITE = {
 		"La technologie Blockchain va changer le monde, chez Crypto Afrique Futur, nous ferrons de vous des acteurs majeurs de cette révolution !"
 }
 // Ink - Theme configuration
-export const PAGE_SIZE = 5;
+export const PAGE_SIZE = 6;
 export const USE_POST_IMG_OVERLAY = false;
 export const USE_MEDIA_THUMBNAIL = true;
 
