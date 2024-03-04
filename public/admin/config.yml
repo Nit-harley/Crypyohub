@@ -3,12 +3,12 @@ backend:
   branch: master
   publish_mode: editorial_workflow
   repo: Nit-harley/Crypyohub # change this to your repo
-  site_domain: criptohub.netlify.app # change this to your domain
-  base_url: https://criptohub.netlify.app # change this to your prod URL
+  site_domain: cryptoafriquefutur.com # change this to your domain
+  base_url: https://cryptoafriquefutur.com # change this to your prod URL
   auth_scope: repo
   auth_endpoint: oauth
-  display_url: https://criptohub.netlify.app
-  logo_url: https://criptohub.netlify.app/assets/logo.jpg
+  display_url: https://cryptoafriquefutur.com
+  logo_url: https://cryptoafriquefutur.com/assets/logo.jpg
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
