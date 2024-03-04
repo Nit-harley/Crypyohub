@@ -28,9 +28,9 @@ export const SITE = {
 	name: "",
 	title: "Crypto Afrique Futur",
 	description: "",
-	url: "https://criptohub.netlify.app/",
-	githubUrl: "https://github.com/Nit-harley",
-	listDrafts: false,
+	url: "https://cryptoafriquefutur.com",
+	githubUrl: "https://cryptoafriquefutur.com",
+	listDrafts: true,
 	image:
 		"/assets/logo.png",
 	// YT video channel Id (used in media.astro)
