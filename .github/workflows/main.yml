@@ -25,5 +25,5 @@ jobs:
         uses: Nit-harley/github-action-astro-publish-drafts@v0.1-beta
         with:
           github_token: $\{{ secrets.GITHUB_TOKEN }}
-          github_actor: Harley
+          github_actor: Nit-harley
           github_repository: Nit-harley/Crypyohub
