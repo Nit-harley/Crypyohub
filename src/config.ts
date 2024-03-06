@@ -32,7 +32,7 @@ export const SITE = {
 	githubUrl: "https://cryptoafriquefutur.com",
 	listDrafts: true,
 	image:
-		"/logo.png",
+		"/assets/logo.png",
 	// YT video channel Id (used in media.astro)
 	ytChannelId: "",
 	// Optional, user/author settings (example)
