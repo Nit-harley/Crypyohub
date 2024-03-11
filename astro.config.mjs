@@ -20,12 +20,12 @@ import partytown from '@astrojs/partytown'
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
 
   buildOptions: {
-    site: 'https://cryptoafriquefutur.com',
+    site: 'https://cryptoafriquefutur.com/',
     sitemap: true,
 },
 
   output: 'server',
-  site: 'https://cryptoafriquefutur.com', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  site: 'https://cryptoafriquefutur.com/', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
     // port: 4321, // The port to run the dev server on.
   },

@@ -8,7 +8,7 @@ backend:
   auth_scope: repo
   auth_endpoint: oauth
   display_url: https://cryptoafriquefutur.com
-  logo_url: https://cryptoafriquefutur.com/assets/logo.jpg
+  logo_url: https://cryptoafriquefutur.com/logo.png
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
