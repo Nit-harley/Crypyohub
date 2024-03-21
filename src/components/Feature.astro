@@ -40,6 +40,21 @@ const features = [
       <p class='text-3xl font-semibold mb-6 text-center tracking-tight text-orange-600 dark:text-orange-300'>
        Un Guide Complet et Collaboratif
       </p>
+      <div class='video-container flex justify-center'>
+        <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dZhYvTpdCYk?si=PzzkYoijGjFOoDyJ&autoplay=1&loop=1&playlist=dZhYvTpdCYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+      <script>
+        // Fonction pour redémarrer la vidéo lorsque la lecture est terminée
+        function restartVideo() {
+          var youtubeVideo = document.getElementById('youtube-video');
+          youtubeVideo.src = youtubeVideo.src;
+        }
+      
+        // Écoute l'événement de fin de lecture de la vidéo et redémarre la vidéo
+        document.getElementById('youtube-video').addEventListener('ended', restartVideo);
+      </script>
+      
       <p class='mt-4 text-center text-gray-600 dark:text-gray-50 lg:mx-auto'>
         Nos articles et guides sont conçus avec soin pour être des ressources informatives et accessibles. Plongez dans un univers où la blockchain devient accessible à tous.
       </p>
