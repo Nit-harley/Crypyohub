@@ -66,6 +66,7 @@ const posts = await getCollection('blog')
     <Prose>
     <Feature />
     </Prose>
+    <ContactCTA />
     <PostPreviewList posts={posts.slice(0, 3)} heading="articles les plus recherchés..."/>
 
     
@@ -78,7 +79,7 @@ const posts = await getCollection('blog')
       <button id="reject-cookies" class="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Refuser les cookies</button>
   </div>
    
-  
+ 
   <div class='text-center sm:text-center md:text-center lg:text-center xl:text-center'> 
     <!-- Autres contenus de votre page d'accueil --> 
     <h2 class="text-3xl font-semibold mb-10 tracking-tight text-orange-500 dark:text-orange-300">Nos Partenaires</h2> 

@@ -2,45 +2,12 @@
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
-
-<aside>
-	<h2>Vous souhaitez tester vos connaissance en matière de blockchain ?</h2>
-	<CallToAction href="mailto:me@example.com">
-		accédez au Blockchain-Quiz ici
-		<Icon icon="paper-plane-tilt" size="1em" />
-	</CallToAction> 
+<aside class="flex flex-col md:flex-row items-center justify-center gap-8 border-t border-b border-gray-800 bg-orange-600 shadow-sm p-6 md:p-10 lg:p-20 mb-8">
+	<h2 class="text-base md:text-lg lg:text-xl text-white text-center md:text-left max-w-xs lg:max-w-15ch">Vous souhaitez augmenter vos connaissances en matière de blockchain ?</h2>
+	<a href="https://www.youtube.com/playlist?list=PLMY1ngNDo5I4p5RHR9b1mn8xfCfk0J6M5" class="btn bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-full flex items-center justify-center md:justify-start">
+		Accédez à la formation ici
+		<Icon icon="paper-plane-tilt" size="1em" class="ml-2" />
+	</a> 
 </aside>
- Astro Ink's Media settings 
-<style>
-	aside {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
 
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
 
-	@media (min-width: 50em) {
-		aside {
-			padding: 7.5rem;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
-		}
-	}
-</style>
