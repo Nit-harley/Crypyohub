@@ -9,7 +9,7 @@ import Prose from '$/components/Prose.astro'
 import { Content as AboutAstroInk } from './_astro-ink.md'
 import Feature from '../components/Feature.astro'
 import Partners from '../components/Partners.astro'
-
+import Icon from './Icon.astro';
 const title = 'Acceuil'
 const description = 'Votre moteur de recherche blockchain made in Africa sur Crypto Afrique Futur'
 
@@ -63,6 +63,8 @@ const posts = await getCollection('blog')
         </div>
     </div>
     <hr/>
+  
+    
     <Prose>
     <Feature />
     </Prose>

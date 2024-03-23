@@ -3,18 +3,22 @@ import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
 
-<aside class="quiz-container flex flex-col md:flex-row items-center justify-center gap-8 border-t border-b border-gray-800 shadow-sm p-6 md:p-10 lg:p-20 mb-8 rounded-lg bg-orange-600">
-    <h2 class="text-base md:text-lg lg:text-xl text-white text-center md:text-left max-w-xs lg:max-w-15ch"> Testez vos connaissances en blockchain avec le Blockchain Quiz</h2>
-    <a href="https://cryptoafriquefutur.systeme.io/3ccf19b5" class="btn bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-full flex items-center justify-center md:justify-start">
+<div class="flex flex-col items-center justify-center mb-8">
+    <h2 class="text-2xl lg:text-3xl text-center mb-4 font-semibold"> Testez vos connaissances en blockchain via le Blockchain Quiz</h2>
+    <a href="https://cryptoafriquefutur.systeme.io/3ccf19b5" class="btn bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full flex items-center justify-center">
         Faire le test
-		<Icon icon="paper-plane-tilt" size="1em" class="ml-2" />
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+			<path d="M15 1H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm-1 14H6a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4H6a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4H6a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"/>
+		  </svg>
+		  
     </a>
-</aside>
+</div>
 
-<aside class="quiz-container flex flex-col md:flex-row items-center justify-center gap-8 border-t border-b border-gray-800 shadow-sm p-6 md:p-10 lg:p-20 mb-8 rounded-lg bg-orange-600">
+<aside class="quiz-container flex flex-col md:flex-row items-center justify-center gap-8  shadow-md p-6 md:p-10 lg:p-20 mb-8 rounded-lg bg-orange-600">
     <h2 class="text-base md:text-lg lg:text-xl text-white text-center md:text-left max-w-xs lg:max-w-15ch">Vous souhaitez augmenter vos connaissances en matière de blockchain ?</h2>
     <a href="https://www.youtube.com/playlist?list=PLMY1ngNDo5I4p5RHR9b1mn8xfCfk0J6M5" class="btn bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-full flex items-center justify-center md:justify-start">
         Accédez à la formation ici
-		<Icon icon="paper-plane-tilt" size="1em" class="ml-2" />
+        <Icon icon="paper-plane-tilt" size="1em" class="ml-2" />
     </a>
 </aside>
+
