@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-rh",
+        "category":"blog",
+        "title":"𝐋𝐚 𝐛𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐝𝐚𝐧𝐬 𝐥𝐞𝐬 𝐫𝐞𝐬𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐡𝐮𝐦𝐚𝐢𝐧𝐞𝐬",
+        "description":"Dans cet article nous verrons comment les RH pourraient-elles changer et évoluer avec l'avènemment de la technologie blockchain.",
+        "tags":["Blockchain","Ressources", "Humaines","RH","Entreprise"],
+        "body":"Si vous travaillez dans les RH, vous savez que le paysage est en constante évolution. De nouvelles technologies émergent constamment et ont le potentiel de bouleverser le domaine. La blockchain fait partie de ces technologies et elle a le potentiel de changer les RH telles que nous les connaissons. Avec la blockchain, nous pourrions envisager un avenir dans lequel des éléments tels que l’historique des salaires et les évaluations de performances seront stockés dans un grand livre décentralisé. Cela donnerait aux employés plus de contrôle sur leurs propres données et pourrait contribuer à réduire la discrimination sur le lieu de travail. En intégrant la blockchain, les RH peuvent non seulement optimiser leurs processus mais aussi renforcer la confiance et l’engagement des employés, tout en naviguant avec prudence face aux défis éthiques et sécuritaires. Cette nouvelle ère numérique dans les RH, propulsée par la blockchain, ouvre la voie à un environnement professionnel plus équitable, transparent et axé sur le développement durable des compétences."
+    },
+    {
         "slug":"blockchain-ecologie",
         "category":"blog",
         "title":" 𝐁𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐞𝐭 𝐄𝐜𝐨𝐥𝐨𝐠𝐢𝐞 - 𝐑é𝐚𝐥𝐢𝐭é 𝐨𝐮 𝐔𝐭𝐨𝐩𝐢𝐞 ?",
