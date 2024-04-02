@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-smartcontract",
+        "category":"blog",
+        "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐮𝐧 𝐬𝐦𝐚𝐫𝐭 𝐜𝐨𝐧𝐭𝐫𝐚𝐜𝐭 ?",
+        "description":"Dans cet article nous verrons qu'un contrat intelligent est un accord numérique sur un réseau blockchain qui est exécuté automatiquement après avoir rempli certains termes et conditions.",
+        "tags":["Blockchain","Smart", "Contract", "Solidity","Contrat","Intelligent"],
+        "body":"Un contrat intelligent est un accord numérique (sous forme de code informatique) signé et stocké sur un réseau blockchain qui s'exécute automatiquement lorsque les termes et conditions (T&C) du contrat sont respectés ; les conditions générales sont écrites dans des langages de programmation spécifiques à la blockchain comme Solidity, Rust ou Go, Solidity étant le plus connu."
+    },
+    {
         "slug":"blockchain-rh",
         "category":"blog",
         "title":"𝐋𝐚 𝐛𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐝𝐚𝐧𝐬 𝐥𝐞𝐬 𝐫𝐞𝐬𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐡𝐮𝐦𝐚𝐢𝐧𝐞𝐬",
