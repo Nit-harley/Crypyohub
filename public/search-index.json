@@ -1,5 +1,13 @@
 [
     {
+        "slug":"blockchain-banque",
+        "category":"blog",
+        "title":"𝐋𝐚 𝐛𝐥𝐨𝐜𝐤𝐜𝐡𝐚𝐢𝐧 𝐝𝐚𝐧𝐬 𝐥𝐞 𝐬𝐞𝐜𝐭𝐞𝐮𝐫 𝐛𝐚𝐧𝐜𝐚𝐢𝐫𝐞",
+        "description":"Dans cet article, nous examinerons quels sont les cas d'utilisation de la blockchain dans le secteur bancaire.",
+        "tags":["Systeme", "Bancaire", "Banque","Finance","Blockchain"],
+        "body":"Le secteur bancaire existe depuis des siècles et sert de facilitateur pour diverses activités financières et économiques, notamment le commerce, les prêts et emprunts, le traitement et le règlement des transactions, la souscription, etc. Cependant, cette longévité a conduit à une stagnation, le secteur devenant au fil du temps lent à s’adapter aux réalités en évolution rapide de l’ère numérique."
+    },
+    {
         "slug":"blockchain-smartcontract",
         "category":"blog",
         "title":"𝐂'𝐞𝐬𝐭 𝐪𝐮𝐨𝐢 𝐮𝐧 𝐬𝐦𝐚𝐫𝐭 𝐜𝐨𝐧𝐭𝐫𝐚𝐜𝐭 ?",
